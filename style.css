@@ -1,0 +1,499 @@
+@font-face {
+    font-family: 'MioFontAncient';
+    src: url('Ancient Medium.ttf') format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Sorts+Mill+Goudy&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ... resto del tuo CSS ... */
+
+body { 
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    background-color: #f4f6f9; 
+    color: #1e293b; 
+    margin: 0; 
+    padding-top: 65px; 
+}
+
+/* --- NAVBAR FISSA CON MENU A TENDINA --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #1a365d; 
+    border-bottom: 3px solid #d4af37; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    color: #d4af37; 
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar-item-dropdown {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+.dropdown-trigger {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    font-size: 0.9rem;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.navbar-item-dropdown:hover .dropdown-trigger {
+    color: #d4af37;
+    background-color: #2b4c7e;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    background-color: #1a365d;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    border-left: 2px solid #d4af37;
+    border-right: 2px solid #d4af37;
+    border-bottom: 3px solid #d4af37;
+    z-index: 1001;
+    border-radius: 0 0 4px 4px;
+}
+
+.dropdown-menu a {
+    color: #e2e8f0;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    font-size: 0.8rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2b4c7e;
+    color: #d4af37;
+    padding-left: 25px;
+}
+
+.navbar-item-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* --- COPERTINA INTERO SCHERMO --- */
+.hero-cover {
+    width: 100%;
+    height: calc(100vh - 65px); 
+    background-image: linear-gradient(rgba(26, 54, 93, 0.65), rgba(153, 27, 27, 0.65)), url('https://cdn.britannica.com/34/152534-050-F10EF781/Leo-III-emperor-Charlemagne-December-25.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    border-bottom: 4px solid #d4af37; 
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.hero-cover h1 {
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    font-size: 3.8rem;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    color: #ffffff;
+}
+
+.hero-cover h1 span {
+    color: #d4af37; 
+}
+
+.hero-cover p {
+    font-family: 'Sorts Mill Goudy', Georgia, serif; 
+    font-size: 1.3rem;
+    margin: 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    color: #e2e8f0;
+}
+
+/* --- STRUTTURA DELLE SEZIONI --- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border-left: 6px solid #1a365d;  
+    border-right: 6px solid #991b1b; 
+    border-top: 1px solid #cbd5e1;
+    border-bottom: 2px solid #d4af37; 
+    border-radius: 4px;
+    padding: 40px;
+    margin-bottom: 60px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+h2 {
+    font-family: 'Cinzel', serif;
+    color: #1a365d; 
+    border-bottom: 3px double #d4af37; 
+    padding-bottom: 12px;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+
+/* --- SEZIONE HOME --- */
+.home-grid {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.home-text {
+    flex: 1.5;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+.home-img-wrapper {
+    flex: 1;
+    text-align: center;
+    border: 3px double #d4af37; 
+    outline: 2px solid #1a365d;  
+    background-color: #f8fafc;
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.home-img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+/* --- SEZIONE ITEMS (CARDS) --- */
+.grid-container { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px; 
+    margin-top: 25px;
+}
+
+.card { 
+    background: #ffffff; 
+    padding: 0; 
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid #1a365d;    
+    border-bottom: 3px solid #991b1b; 
+    border-radius: 4px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-top-color: #d4af37; 
+    border-bottom-color: #d4af37;
+    box-shadow: 0 12px 20px rgba(26,54,93,0.12);
+}
+
+/* MODIFICATO: Allargato lo spazio verticale per le foto a 240px */
+.card-image-box {
+    width: 100%;
+    height: 240px;
+    background-color: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card h3 { 
+    margin-top: 0; 
+    color: #1e293b; 
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    padding-bottom: 6px;
+    margin-bottom: 12px;
+    border-bottom: 1px dashed #cbd5e1;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    border: 1px solid #d4af37; 
+    align-self: flex-start;
+}
+.badge-person { background-color: #1a365d; } 
+.badge-place { background-color: #475569; }   
+.badge-work { background-color: #991b1b; }    
+.badge-object { background-color: #0f766e; }  
+
+/* MODIFICATO: Aggiunta altezza massima e barra di scorrimento (scrollbar) */
+.description {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #334155;
+    text-align: justify;
+    max-height: 120px; 
+    overflow-y: auto;  
+    padding-right: 8px;
+    margin-bottom: 20px;
+}
+
+/* Stilizzazione barra di scorrimento per browser moderni */
+.description::-webkit-scrollbar {
+    width: 5px;
+}
+.description::-webkit-scrollbar-track {
+    background: #f1f5f9; 
+}
+.description::-webkit-scrollbar-thumb {
+    background: #cbd5e1; 
+    border-radius: 4px;
+}
+.description::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8; 
+}
+
+/* NUOVO: Stile per il bottone See More */
+.btn-see-more {
+    margin-top: auto; 
+    display: inline-block;
+    text-align: center;
+    background-color: #1a365d;
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-see-more:hover {
+    background-color: #d4af37;
+    color: #1a365d;
+    box-shadow: 0 4px 8px rgba(212,175,55,0.3);
+}
+
+.placeholder-box {
+    background: #f8fafc;
+    padding: 25px;
+    border: 1px dashed #cbd5e1;
+    font-style: italic;
+    color: #64748b;
+    border-radius: 4px;
+}
+
+.zoom-frame {
+    width: fit-content;        /* La cornice si stringe esattamente attorno alle proporzioni dell'SVG */
+    max-width: 90vw;           /* Impedisce alla cornice di uscire dai bordi dello schermo */
+    max-height: 80vh;          /* Impedisce alla cornice di essere troppo alta */
+    margin: 0 auto;            /* Centra la cornice orizzontalmente */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;          /* Mantiene lo zoom confinato all'interno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fafafa;
+    cursor: grab;
+    position: relative;
+}
+
+.zoom-frame:active {
+    cursor: grabbing;
+}
+
+.zoom-frame img {
+    display: block;
+    max-width: 100%;           /* L'immagine non supera mai la cornice */
+    max-height: 80vh;          /* L'altezza massima viene rispettata */
+    height: auto;              /* Mantiene le proporzioni originali dell'SVG */
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* --- MEDIA QUERIES PER RESPONSIVITÀ MOBILE E TABLET --- */
+
+/* Per schermi fino a 992px (Tablet e dispositivi medi) */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .navbar-menu {
+        gap: 0;
+    }
+
+    .dropdown-trigger {
+        padding: 0 10px;
+        font-size: 0.8rem;
+    }
+
+    .hero-cover h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-grid {
+        flex-direction: column; /* Incolonna testo e immagine */
+        gap: 20px;
+    }
+
+    .home-text {
+        text-align: left; /* Migliore leggibilità su schermi stretti */
+    }
+
+    .home-img-wrapper img {
+        height: auto;
+        max-height: 250px;
+    }
+}
+
+/* Per schermi fino a 768px (Smartphone) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 110px; /* Aumenta il rientro per la navbar che va a capo */
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navbar-menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Permette ai menu di andare a capo su mobile */
+        margin-top: 5px;
+    }
+
+    .dropdown-menu {
+        top: 100%; /* Si posiziona sotto la voce di menu relativa */
+        min-width: 180px;
+    }
+
+    .hero-cover {
+        height: 60vh;
+    }
+
+    .hero-cover h1 {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-cover p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 30px 10px;
+    }
+
+    section {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Una singola colonna per le card su smartphone */
+    }
+
+    .zoom-frame {
+        max-width: 100%; /* La cornice dell'SVG usa tutto lo spazio disponibile */
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .zoom-frame {
+        max-width: 100%; /* Su smartphone sfrutta tutta la larghezza disponibile */
+    }
+}

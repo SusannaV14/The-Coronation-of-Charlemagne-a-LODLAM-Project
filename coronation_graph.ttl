@@ -1,0 +1,109 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix ex: <http://example.org/coronation/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:HenriPirenne a foaf:Person ;
+    rdfs:seeAlso <http://viaf.org/viaf/44435542>,
+        <https://www.wikidata.org/wiki/Q312501> ;
+    foaf:name "Henri Pirenne" ;
+    foaf:topic_interest ex:wikipedia_coronation ;
+    schema:birthDate "1862-12-23"^^xsd:date ;
+    schema:deathDate "1935-10-25"^^xsd:date ;
+    schema:hasOccupation "Historian / Professor" .
+
+ex:AnnalsOfLorsch a schema:Manuscript ;
+    dc:creator "Anonymous Monks of Lorsch" ;
+    dc:language "Latin" ;
+    dc:subject "Frankish Kingdom between 703-803" ;
+    dc:title "Annales Laureshamenses" ;
+    rdfs:seeAlso <http://viaf.org/viaf/176829983>,
+        <https://www.wikidata.org/wiki/Q322098> ;
+    schema:datePublished "0803"^^xsd:gYear .
+
+ex:BustOfCharlemagne a crm:E22_Human-Made_Object ;
+    rdfs:label "Bust of Charlemagne" ;
+    dc:subject ex:Charlemagne ;
+    crm:P45_consists_of "Silver / Gold / Precious Stones / Enamel" ;
+    crm:P55_has_current_location "Aachen Cathedral Treasury" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q15534639> ;
+    schema:temporalCoverage "Gothic Period (1349)" .
+
+ex:Einhard a foaf:Person ;
+    rdfs:seeAlso <http://viaf.org/viaf/14778504>,
+        <https://www.wikidata.org/wiki/Q154526> ;
+    foaf:name "Einhard" ;
+    schema:birthDate "0770"^^xsd:gYear ;
+    schema:deathDate "0840-03-14"^^xsd:date ;
+    schema:hasOccupation "Scholar / Biographer" .
+
+ex:EquestrianStatue a crm:E22_Human-Made_Object ;
+    rdfs:label "Equestrian Statuette of Charlemagne" ;
+    dc:subject ex:Charlemagne ;
+    crm:P45_consists_of "Bronze" ;
+    crm:P55_has_current_location "Louvre Museum, Paris" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q15934337> ;
+    schema:temporalCoverage "Carolingian Period (IX Century)" .
+
+ex:GrandesChroniques a schema:Manuscript ;
+    dc:creator "Primats of Saint-Denis / Various Authors" ;
+    dc:language "French" ;
+    dc:subject "Royal History of France" ;
+    dc:title "Chroniques de France ou de Saint Denis" ;
+    rdfs:seeAlso <http://viaf.org/viaf/186363233>,
+        <https://www.wikidata.org/wiki/Q1543005> ;
+    schema:datePublished "1300"^^xsd:gYear .
+
+ex:ImperialCrown a crm:E22_Human-Made_Object ;
+    rdfs:label "Imperial Crown" ;
+    crm:P45_consists_of "Gold / Precious Stones / Pearls" ;
+    crm:P55_has_current_location "Hofburg Palace, Wien, Austria" ;
+    rdfs:seeAlso <https://www.wikidata.org/wiki/Q701633> ;
+    schema:temporalCoverage "Late X Century (Ottonian Period)" .
+
+ex:OldStPeters a crm:E53_Place ;
+    rdfs:label "St. Peter's Basilica" ;
+    rdfs:seeAlso <http://viaf.org/viaf/123088347>,
+        <https://www.wikidata.org/wiki/Q810126> ;
+    schema:addressCountry "Vatican City" ;
+    schema:temporalCoverage "Early Christian Art" .
+
+ex:PopeLeoIII a foaf:Person ;
+    rdfs:seeAlso <http://viaf.org/viaf/120699807>,
+        <https://www.wikidata.org/wiki/Q132086> ;
+    foaf:name "Pope Leo III" ;
+    foaf:title "Pope" ;
+    schema:birthDate "0750"^^xsd:gYear ;
+    schema:deathDate "0816-06-12"^^xsd:date .
+
+ex:VitaKaroli a schema:Manuscript ;
+    dc:creator ex:Einhard ;
+    dc:language "Latin" ;
+    dc:subject ex:Charlemagne ;
+    dc:title "Vita Karoli Magni" ;
+    rdfs:seeAlso <http://viaf.org/viaf/143152138664710982815>,
+        <https://www.wikidata.org/wiki/Q538574> ;
+    schema:datePublished "0817"^^xsd:gYear .
+
+ex:wikipedia_coronation a crm:E5_Event ;
+    crm:P11_had_participant ex:Charlemagne ;
+    crm:P14_carried_out_by ex:PopeLeoIII ;
+    crm:P16_used_specif_object ex:ImperialCrown ;
+    crm:P7_took_place_at ex:OldStPeters ;
+    schema:subjectOf ex:AnnalsOfLorsch,
+        ex:GrandesChroniques .
+
+ex:Charlemagne a foaf:Person ;
+    rdfs:seeAlso <http://viaf.org/viaf/89643029>,
+        <https://www.wikidata.org/wiki/Q3044> ;
+    foaf:name "Charlemagne" ;
+    foaf:title "Emperor of the Romans" ;
+    schema:birthDate "0748-04-02"^^xsd:date ;
+    schema:deathDate "0814-01-28"^^xsd:date ;
+    schema:subjectOf ex:BustOfCharlemagne,
+        ex:EquestrianStatue,
+        ex:VitaKaroli .
+

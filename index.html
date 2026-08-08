@@ -1,0 +1,615 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Coronation of Charlemagne: Text Annotation</title>
+<style>
+                :root {
+                    --bg-primary: #f8f9fa;
+                    --text-primary: #212529;
+                    --person-color: #0d6efd;
+                    --place-color: #198754;
+                    --bibl-color: #d63384;
+                    --object-color: #fd7e14;
+                    --border-color: #e9ecef;
+                }
+                body {
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    margin: 0;
+                    padding: 0;
+                    background-color: var(--bg-primary);
+                    color: var(--text-primary);
+                }
+                header {
+                    background: #343a40;
+                    color: white;
+                    padding: 1.5rem 2rem;
+                    border-bottom: 4px solid #0d6efd;
+                }
+                header h1 { margin: 0; font-size: 1.8rem; }
+                header p { margin: 0.3rem 0 0 0; opacity: 0.8; font-size: 0.95rem; }
+                
+                .container {
+                    display: flex;
+                    gap: 2rem;
+                    padding: 2rem;
+                    max-width: 1400px;
+                    margin: 0 auto;
+                }
+                .main-text {
+                    flex: 2;
+                    background: white;
+                    padding: 2.5rem;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+                    line-height: 1.7;
+                    font-size: 1.05rem;
+                }
+                .sidebar {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.5rem;
+                }
+                .section-title {
+                    border-bottom: 2px solid var(--border-color);
+                    padding-bottom: 0.5rem;
+                    margin-top: 0;
+                    color: #495057;
+                }
+                
+                /* Metadata Cards */
+                .entity-card {
+                    background: white;
+                    border-radius: 8px;
+                    padding: 1.2rem;
+                    border-left: 5px solid #6c757d;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                    transition: transform 0.2s, box-shadow 0.2s;
+                }
+                .entity-card:target, .entity-card.highlight {
+                    transform: scale(1.02);
+                    box-shadow: 0 0 12px rgba(13, 110, 253, 0.4);
+                    outline: 2px solid #0d6efd;
+                }
+                .entity-card.person { border-left-color: var(--person-color); }
+                .entity-card.place { border-left-color: var(--place-color); }
+                .entity-card.bibl { border-left-color: var(--bibl-color); }
+                .entity-card.object { border-left-color: var(--object-color); }
+                
+                .entity-card h4 { margin: 0 0 0.5rem 0; font-size: 1.1rem; }
+                .entity-card ul { list-style: none; padding: 0; margin: 0; font-size: 0.9rem; }
+                .entity-card li { margin-bottom: 0.3rem; }
+                .entity-card strong { color: #495057; }
+                
+                /* In-text markup */
+                .entity-ref {
+                    text-decoration: none;
+                    font-weight: 600;
+                    padding: 0.1rem 0.3rem;
+                    border-radius: 4px;
+                    transition: background-color 0.2s;
+                }
+                .entity-ref.person { color: var(--person-color); background: rgba(13, 110, 253, 0.1); }
+                .entity-ref.place  { color: var(--place-color);  background: rgba(25, 135, 84, 0.1); }
+                .entity-ref.bibl { color: var(--bibl-color); background: rgba(214, 51, 132, 0.1); }
+                .entity-ref.object { color: var(--object-color); background: rgba(253, 126, 20, 0.1); }
+                .entity-ref:hover { text-decoration: underline; }
+                
+                figure {
+                    background: #f8f9fa;
+                    border: 1px dashed #ced4da;
+                    padding: 1rem;
+                    margin: 1.5rem 0;
+                    border-radius: 6px;
+                    font-style: italic;
+                    color: #6c757d;
+                }
+                .external-link { font-size: 0.8rem; word-break: break-all; }
+
+                /* Table with relations */
+                .relations-section {
+                margin-top: 2rem;
+                background: white;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+                }
+                .relations-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 1rem;
+                font-size: 0.95rem;
+                }
+                .relations-table th, .relations-table td {
+                padding: 0.75rem 1rem;
+                text-align: left;
+                border-bottom: 1px solid var(--border-color);
+                }
+                .relations-table th {
+                background-color: #f1f3f5;
+                color: #495057;
+                font-weight: 600;
+                }
+                .relations-table tr:hover {
+                background-color: #f8f9fa;
+                }
+                .relation-name {
+                font-family: monospace;
+                background: #e9ecef;
+                padding: 0.2rem 0.4rem;
+                border-radius: 4px;
+                font-size: 0.85rem;
+                color: #333;
+                }
+            </style>
+</head>
+<body>
+<header><h1>The Coronation of Charlemagne: Text Annotation</h1>
+<p>Annotations'Author: <strong>Susanna Valentini</strong> | Publication: 2026</p></header><div class="container">
+<main class="main-text">
+         
+         
+         <section>
+            <h2>Coronation</h2>
+            <p>
+               After <a class="entity-ref person" href="#PopeLeoIII">Leo III</a> became pope in 795, he faced political opposition. 
+               His enemies accused him of a number of crimes and physically attacked him in April 799, attempting to remove his eyes and tongue. 
+               <a class="entity-ref person" href="#PopeLeoIII">Leo</a> escaped and fled north to seek <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s help. 
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> continued his campaign against the Saxons before breaking off to meet <a class="entity-ref person" href="#PopeLeoIII">Leo</a> 
+               at Paderborn in September. Hearing evidence from the pope and his enemies, he sent <a class="entity-ref person" href="#PopeLeoIII">Leo</a> back to Rome with royal legates 
+               who were instructed to reinstate the pope and conduct a further investigation. In August 799 <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> made plans 
+               to go to Rome after an extensive tour of his lands in Neustria. <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> met <a class="entity-ref person" href="#PopeLeoIII">Leo</a> 
+               in November near Mentana at the 12th milestone outside Rome, the traditional location where Roman emperors began their formal entry into the city. 
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> presided over an assembly to hear the charges but believed that no one could sit in judgment of the pope. 
+               <a class="entity-ref person" href="#PopeLeoIII">Leo</a> swore an oath on 23 December, declaring his innocence of all charges. 
+               At mass in <a class="entity-ref place" href="#OldStPeters">St. Peter's Basilica</a> on Christmas Day 800, 
+               <a class="entity-ref person" href="#PopeLeoIII">Leo</a> proclaimed <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> "emperor of the Romans" 
+               (Imperator Romanorum) and crowned him. <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> was the first reigning emperor in the west since the deposition of Romulus Augustulus in 476.
+               Charles the Younger was anointed king by <a class="entity-ref person" href="#PopeLeoIII">Leo</a> at the same time.
+            </p>
+            
+            <figure><strong>[Figure]: </strong>
+               <span>
+                  <a class="entity-ref person" href="#PopeLeoIII">Pope Leo III</a> crowning <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>. 
+                  From <a class="entity-ref bibl" href="#GrandesChroniques">Chroniques de France ou de Saint Denis</a>, volume 1, France, second quarter of the 14th century.
+               </span>
+            </figure>
+
+            <p>
+               Historians differ about the intentions of the imperial coronation, the extent to which 
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> was aware of it or participated in its planning, 
+               and the significance of the events for those present and for <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s reign.
+               Contemporary Frankish and papal sources differ in their emphasis on, and representation of, events.
+               <a class="entity-ref person" href="#Einhard">Einhard</a> writes that <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> 
+               would not have entered the church if he knew about the pope's plan; modern historians have regarded his report 
+               as truthful or rejected it as a literary device demonstrating <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s humility.
+               Collins says that the actions surrounding the coronation indicate that it was planned by <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> 
+               as early as his meeting with Leo in 799, and Fried writes that <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> planned to adopt the title of 
+               emperor by 798 "at the latest." During the years before the coronation, <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s courtier Alcuin 
+               referred to his realm as an Imperium Christianum ("Christian Empire") in which "just as the inhabitants of the Roman Empire had been united 
+               by a common Roman citizenship", the new empire would be united by a common Christian faith. This is the view of <a class="entity-ref person" href="#HenriPirenne">Henri Pirenne</a>, 
+               who says that "Charles was the Emperor of the ecclesia as the Pope conceived it, of the Roman Church, regarded as the universal Church".
+            </p>
+
+            <p>
+               The Eastern Roman (Byzantine) Empire remained a significant contemporary power in European politics for  <a class="entity-ref person" href="#PopeLeoIII">Leo</a> 
+               and  <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>, especially in Italy. The Byzantines continued to hold a substantial portion of Italy, 
+               with their borders not far south of Rome. Empress Irene had seized the throne from her son Constantine VI in 797, deposing and blinding him.
+               Irene, the first Byzantine empress, faced opposition in Constantinople because of her gender and her means of accession. One of the earliest narrative sources 
+               for the coronation,  the <a class="entity-ref bibl" href="#AnnalsOfLorsch">Annals of Lorsch</a>, present a female ruler in Constantinople as a vacancy in the imperial title 
+               which justified <a class="entity-ref person" href="#PopeLeoIII">Leo</a>'s coronation of <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>. 
+               <a class="entity-ref person" href="#HenriPirenne">Pirenne</a> disagrees, saying the coronation "was not in any sense explained by the fact that at this moment a woman was reigning 
+               in Constantinople."<a class="entity-ref person" href="#PopeLeoIII">Leo</a>'s main motivations may have been the desire to increase his standing after his political difficulties, 
+               placing himself as a power broker and securing <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> as a powerful ally and protector. The Byzantine Empire's lack of ability 
+               to influence events in Italy and support the papacy were also important to <a class="entity-ref person" href="#PopeLeoIII">Leo</a>'s position. According to the Royal Frankish Annals, 
+               <a class="entity-ref person" href="#PopeLeoIII">Leo</a> prostrated himself before <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> after crowning him 
+               (an act of submission standard in Roman coronation rituals from the time of Diocletian). This account presents <a class="entity-ref person" href="#PopeLeoIII">Leo</a> not as 
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s superior, but as the agent of the Roman people who acclaimed <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>as emperor.
+            </p>
+
+            <p>
+               Historian Henry Mayr-Harting claims that the assumption of the imperial title by <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> was an effort to incorporate the Saxons 
+               into the Frankish realm, since they did not have a native tradition of kingship. However, Costambeys et al. note in The Carolingian World "since Saxony had not been in the 
+               Roman empire it is hard to see on what basis an emperor would have been any more welcomed." These authors write that the decision to take the title of emperor was aimed at 
+               furthering <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s influence in Italy, as an appeal to traditional authority recognised by Italian elites within and (especially) outside his control.
+            </p>
+
+            <p>
+               Collins writes that becoming emperor gave <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> "the right to try to impose his rule over the whole of [Italy]", 
+               considering this a motivation for the coronation. He notes the "element of political and military risk" inherent in the affair due to the opposition of the Byzantine Empire 
+               and potential opposition from the Frankish elite, as the imperial title could draw him further into Mediterranean politics. Collins sees several of <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s actions 
+               as attempts to ensure that his new title had a distinctly-Frankish context.
+            </p>
+
+            <p>
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s coronation led to a centuries-long ideological conflict between his successors and Constantinople known as the problem of two emperors, 
+               which could be seen as a rejection or usurpation of the Byzantine emperors' claim to be the universal, preeminent rulers of Christendom. Historian James Muldoon writes that 
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> may have had a more limited view of his role, seeing the title as representing dominion over lands he already ruled.
+               However, the title of emperor gave <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> enhanced prestige and ideological authority. He immediately incorporated his new title into documents he issued, 
+               adopting the formula "Charles, most serene augustus, crowned by God, great peaceful emperor governing the Roman empire, and who is by the mercy of God king of the Franks and the Lombards" 
+               instead of the earlier form "Charles, by the grace of God king of the Franks and Lombards and patrician of the Romans." <a class="entity-ref person" href="#PopeLeoIII">Leo</a> acclaimed <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> 
+               as "emperor of the Romans" during the coronation, but <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> never used this title. The avoidance of the specific claim of being a "Roman emperor", as opposed to the more neutral 
+               "emperor governing the Roman empire", may have been to improve relations with the Byzantines. This formulation (with the continuation of his earlier royal titles) may also represent a view of his role as emperor as being 
+               the ruler of the people of the city of Rome, as he was of the Franks and the Lombards.
+            </p>
+         </section>
+
+
+         
+         <section>
+            <h2>Memory and historiography</h2>
+            <p>
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> is a frequent subject and inspiration for medieval writers after his death. 
+               <a class="entity-ref person" href="#Einhard">Einhard</a>'s <a class="entity-ref bibl" href="#VitaKaroli">Vita Karoli Magni</a>, according to Fried, "can be said to have revived the defunct literary genre of the secular biography."
+               <a class="entity-ref person" href="#Einhard">Einhard</a> drew on classical sources such as Suetonius' The Twelve Caesars, the orations of Cicero, and Tacitus' Agricola to frame his work's structure and style. 
+               The Carolingian period also saw a revival of the mirrors for princes genre. The author of the Latin poem Visio Karoli Magni, written c.865, uses facts (apparently from <a class="entity-ref person" href="#Einhard">Einhard</a>) and 
+               his own observations on the decline of <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s family after their civil wars later in the 9th century as the bases of a visionary tale about <a class="entity-ref person" href="#Charlemagne">Charles</a> 
+               meeting a prophetic spectre in a dream. Notker's Gesta Karoli Magni, written for <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s great-grandson Charles the Fat, presents moral anecdotes (exempla) to highlight the emperor's qualities as a ruler.
+            </p>
+         </section>
+
+         
+         <section>
+            <h2>Appearance and iconography</h2>
+            
+            <figure><strong>[Figure]: </strong>
+               <span>
+                  Top: <a class="entity-ref object" href="#EquestrianStatue">Carolingian-era equestrian statuette</a> depicting <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> or Charles the Bald.
+                  Bottom: <a class="entity-ref object" href="#BustOfCharlemagne">Bust of Charlemagne</a>, an idealised portrayal and reliquary said to contain <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s skull cap, 
+                  produced in the 14th century.
+               </span>
+            </figure>
+
+            <p>
+               <a class="entity-ref person" href="#Einhard">Einhard</a> gives a first-hand description of <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s appearance later in life:
+               He was heavily built, sturdy, and of considerable stature, although not exceptionally so, since his height was seven times the length of his own foot. 
+               He had a round head, large and lively eyes, a slightly larger nose than usual, white but still attractive hair, a bright and cheerful expression, a short and fat neck, 
+               and he enjoyed good health, except for the fevers that affected him in the last few years of his life.
+            </p>
+
+            <p>
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a>'s tomb was opened in 1861 by scientists who reconstructed his skeleton and measured it at 1.92 metres (6 ft 4 in) in length, 
+               roughly equivalent to <a class="entity-ref person" href="#Einhard">Einhard</a>'s measurement. A 2010 estimate of his height from an X-ray and CT scan of his tibia was 1.84 metres (6 ft 0 in); 
+               this puts him in the 99th percentile of height for his period, given that average male height of his time was 1.69 metres (5 ft 7 in). The width of the bone suggested that he was slim.
+            </p>
+
+            <p>
+               <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> wore his hair short, abandoning the Merovingian tradition of long-haired monarchs.[363] He had a moustache (possibly imitating King Theodoric the Great), in contrast with the bearded Merovingian kings;
+               future Carolingian monarchs adopted this style. Paul Dutton notes the ubiquitous  <a class="entity-ref object" href="#ImperialCrown">crown</a> in portraits of Charlemagne and other Carolingian rulers, replacing the earlier Merovingian long hair.
+               A 9th-century <a class="entity-ref object" href="#EquestrianStatue">statuette</a> depicts <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> or his grandson Charles the Bald and shows the subject as moustachioed with short hair;
+               this also appears on contemporary coinage.
+            </p>
+
+            <p>
+               By the 12th century, <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> is described as bearded rather than moustachioed in literary sources such as the Song of Roland, the Pseudo-Turpin Chronicle, and other works in Latin, French, and German.
+               The Pseudo-Turpin uniquely says that his hair was brown. Later art and iconography of <a class="entity-ref person" href="#Charlemagne">Charlemagne</a> generally depicts him in a later medieval style as bearded with longer hair.
+            </p>
+         </section>
+
+      <section class="relations-section"><h3 class="section-title">Entities Relations (listRelation)</h3>
+<table class="relations-table">
+<thead><tr>
+<th>Active (Subject)</th>
+<th>Relation (Property)</th>
+<th>Passive (Object)</th>
+</tr></thead>
+<tbody>
+<tr>
+<td><a class="entity-ref" href="#Charlemagne">Charlemagne</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>foaf:Person</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#PopeLeoIII">PopeLeoIII</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>foaf:Person</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#Einhard">Einhard</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>foaf:Person</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#HenriPirenne">HenriPirenne</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>foaf:Person</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#OldStPeters">OldStPeters</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>crm:E53_Place</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#VitaKaroli">VitaKaroli</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>schema:Manuscript</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#AnnalsOfLorsch">AnnalsOfLorsch</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>schema:Manuscript</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#GrandesChroniques">GrandesChroniques</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>schema:Manuscript</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#EquestrianStatue">EquestrianStatue</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>crm:E22_Human-Made_Object</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#BustOfCharlemagne">BustOfCharlemagne</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>crm:E22_Human-Made_Object</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#ImperialCrown">ImperialCrown</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>crm:E22_Human-Made_Object</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">rdf:type</span></td>
+<td>crm:E5_Event</td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">crm:P14_carried_out_by</span></td>
+<td><a class="entity-ref" href="#PopeLeoIII">PopeLeoIII</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">crm:P11_had_participant</span></td>
+<td><a class="entity-ref" href="#Charlemagne">Charlemagne</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">crm:P7_took_place_at</span></td>
+<td><a class="entity-ref" href="#OldStPeters">OldStPeters</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#HenriPirenne">HenriPirenne</a></td>
+<td><span class="relation-name">foaf:topic_interest</span></td>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#Charlemagne">Charlemagne</a></td>
+<td><span class="relation-name">schema:subjectOf</span></td>
+<td><a class="entity-ref" href="#VitaKaroli">VitaKaroli</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#VitaKaroli">VitaKaroli</a></td>
+<td><span class="relation-name">dc:creator</span></td>
+<td><a class="entity-ref" href="#Einhard">Einhard</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">schema:subjectOf</span></td>
+<td><a class="entity-ref" href="#AnnalsOfLorsch">AnnalsOfLorsch</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">schema:subjectOf</span></td>
+<td><a class="entity-ref" href="#GrandesChroniques">GrandesChroniques</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#Charlemagne">Charlemagne</a></td>
+<td><span class="relation-name">schema:subjectOf</span></td>
+<td><a class="entity-ref" href="#EquestrianStatue">EquestrianStatue</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#Charlemagne">Charlemagne</a></td>
+<td><span class="relation-name">schema:subjectOf</span></td>
+<td><a class="entity-ref" href="#BustOfCharlemagne">BustOfCharlemagne</a></td>
+</tr>
+<tr>
+<td><a class="entity-ref" href="#wikipedia_coronation">wikipedia_coronation</a></td>
+<td><span class="relation-name">crm:P16_used_specif_object</span></td>
+<td><a class="entity-ref" href="#ImperialCrown">ImperialCrown</a></td>
+</tr>
+</tbody>
+</table></section></main><aside class="sidebar"><h2 class="section-title">Entities Index</h2>
+<section><h3>People</h3>
+<div class="entity-card person" id="Charlemagne">
+<h4>Charlemagne</h4>
+<ul>
+<li>
+<strong>Title:</strong>Emperor of the Romans</li>
+<li>
+<strong>Birth-Death:</strong>0748-04-02 / 0814-01-28</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q3044" target="_blank">https://www.wikidata.org/wiki/Q3044</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/89643029" target="_blank">http://viaf.org/viaf/89643029</a>
+</li>
+</ul>
+</div>
+<div class="entity-card person" id="PopeLeoIII">
+<h4>Pope Leo III</h4>
+<ul>
+<li>
+<strong>Title:</strong>Pope</li>
+<li>
+<strong>Birth-Death:</strong>0750 / 0816-06-12</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q132086" target="_blank">https://www.wikidata.org/wiki/Q132086</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/120699807" target="_blank">http://viaf.org/viaf/120699807</a>
+</li>
+</ul>
+</div>
+<div class="entity-card person" id="Einhard">
+<h4>Einhard</h4>
+<ul>
+<li>
+<strong>Occupation:</strong>Scholar / Biographer</li>
+<li>
+<strong>Birth-Death:</strong>0770 / 0840-03-14</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q154526" target="_blank">https://www.wikidata.org/wiki/Q154526</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/14778504" target="_blank">http://viaf.org/viaf/14778504</a>
+</li>
+</ul>
+</div>
+<div class="entity-card person" id="HenriPirenne">
+<h4>Henri Pirenne</h4>
+<ul>
+<li>
+<strong>Occupation:</strong>Historian / Professor</li>
+<li>
+<strong>Birth-Death:</strong>1862-12-23 / 1935-10-25</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q312501" target="_blank">https://www.wikidata.org/wiki/Q312501</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/44435542" target="_blank">http://viaf.org/viaf/44435542</a>
+</li>
+</ul>
+</div></section><section><h3>Places</h3>
+<div class="entity-card place" id="OldStPeters">
+<h4>St. Peter's Basilica</h4>
+<ul>
+<li>
+<strong>Location:</strong>Vatican City</li>
+<li>
+<strong>Artistic Period:</strong>Early Christian Art</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q810126" target="_blank">https://www.wikidata.org/wiki/Q810126</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/123088347" target="_blank">http://viaf.org/viaf/123088347</a>
+</li>
+</ul>
+</div></section><section><h3>Literary Works</h3>
+<div class="entity-card bibl" id="VitaKaroli">
+<h4>Vita Karoli Magni</h4>
+<ul>
+<li>
+<strong>Subject of the work: </strong><a class="entity-ref person" href="#Charlemagne">Charlemagne</a>
+</li>
+<li>
+<strong>Date:</strong>c. 817 - 833</li>
+<li>
+<strong>Language:</strong>Latin</li>
+<li>
+<strong>Author: </strong><a class="entity-ref person" href="#Einhard">Einhard</a>
+</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q538574" target="_blank">https://www.wikidata.org/wiki/Q538574</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/143152138664710982815" target="_blank">http://viaf.org/viaf/143152138664710982815</a>
+</li>
+</ul>
+</div>
+<div class="entity-card bibl" id="AnnalsOfLorsch">
+<h4>Annales Laureshamenses</h4>
+<ul>
+<li>
+<strong>Subject of the work: </strong>Frankish Kingdom between 703-803</li>
+<li>
+<strong>Date:</strong>c. 803</li>
+<li>
+<strong>Language:</strong>Latin</li>
+<li>
+<strong>Author: </strong>Anonymous Monks of Lorsch</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q322098" target="_blank">https://www.wikidata.org/wiki/Q322098</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/176829983" target="_blank">http://viaf.org/viaf/176829983</a>
+</li>
+</ul>
+</div>
+<div class="entity-card bibl" id="GrandesChroniques">
+<h4>Chroniques de France ou de Saint Denis</h4>
+<ul>
+<li>
+<strong>Subject of the work: </strong>Royal History of France</li>
+<li>
+<strong>Date:</strong>XIV Century</li>
+<li>
+<strong>Language:</strong>French</li>
+<li>
+<strong>Author: </strong>Primats of Saint-Denis / Various Authors</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q1543005" target="_blank">https://www.wikidata.org/wiki/Q1543005</a>
+</li>
+<li class="external-link">
+<strong>VIAF:</strong><a href="http://viaf.org/viaf/186363233" target="_blank">http://viaf.org/viaf/186363233</a>
+</li>
+</ul>
+</div></section><section><h3>Artistic Objects</h3>
+<div class="entity-card object" id="EquestrianStatue">
+<h4>Equestrian Statuette of Charlemagne</h4>
+<ul>
+<li>
+<strong>Artistic Period:</strong>Carolingian Period (IX Century)</li>
+<li>
+<strong>Materials:</strong>Bronze</li>
+<li>
+<strong>Current Location:</strong>Louvre Museum, Paris</li>
+<li>
+<strong>Depicts:</strong><a class="entity-ref person" href="#Charlemagne">Charlemagne</a>
+</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q15934337" target="_blank">https://www.wikidata.org/wiki/Q15934337</a>
+</li>
+</ul>
+</div>
+<div class="entity-card object" id="BustOfCharlemagne">
+<h4>Bust of Charlemagne</h4>
+<ul>
+<li>
+<strong>Artistic Period:</strong>Gothic Period (1349)</li>
+<li>
+<strong>Materials:</strong>Silver / Gold / Precious Stones / Enamel</li>
+<li>
+<strong>Current Location:</strong>Aachen Cathedral Treasury</li>
+<li>
+<strong>Depicts:</strong><a class="entity-ref person" href="#Charlemagne">Charlemagne</a>
+</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q15534639" target="_blank">https://www.wikidata.org/wiki/Q15534639</a>
+</li>
+</ul>
+</div>
+<div class="entity-card object" id="ImperialCrown">
+<h4>Imperial Crown</h4>
+<ul>
+<li>
+<strong>Artistic Period:</strong>Late X Century (Ottonian Period)</li>
+<li>
+<strong>Materials:</strong>Gold / Precious Stones / Pearls</li>
+<li>
+<strong>Current Location:</strong>Hofburg Palace, Wien, Austria</li>
+<li>
+<strong>Depicts:</strong>Divine Right / Christian Monarchy Symbolism</li>
+<li class="external-link">
+<strong>Wikidata:</strong><a href="https://www.wikidata.org/wiki/Q701633" target="_blank">https://www.wikidata.org/wiki/Q701633</a>
+</li>
+</ul>
+</div></section></aside>
+</div>
+<script>
+                document.querySelectorAll('.entity-ref').forEach(link => {
+                    link.addEventListener('click', (e) => {
+                        document.querySelectorAll('.entity-card').forEach(card => card.classList.remove('highlight'));
+                        const id = link.getAttribute('href').substring(1);
+                        const card = document.getElementById(id);
+                        if(card) {
+                            card.classList.add('highlight');
+                        }
+                    });
+                });
+            </script>
+</body>
+</html>
