@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    
+<title>Les Grandes Chroniques de France | Passerelles</title>
+<link rel="canonical" href="https://passerelles.essentiels.bnf.fr/fr/article/05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france"/>
+<meta name="description" content="C’est vers 1250 que le roi Louis IX commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française..."/>
+<meta property="og:title" content="Les Grandes Chroniques de France | Passerelles"/>
+<meta property="og:description" content="C’est vers 1250 que le roi Louis IX commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française..."/>
+<meta property="og:image" content="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/KEE86yRZ/uploads/media/image/20201204203317000000_pas_2266.jpg"/>
+<meta property="og:image:url" content="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/KEE86yRZ/uploads/media/image/20201204203317000000_pas_2266.jpg"/>
+<meta property="og:image:secure_url" content="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/KEE86yRZ/uploads/media/image/20201204203317000000_pas_2266.jpg"/>
+<meta property="og:site_name" content="Passerelles"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image:alt" content="Les Grandes Chroniques de France | Passerelles"/>
+<meta name=”twitter:site” content="@laBnF"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/build/img/logo/favicon.ico"/>
+        <link rel="stylesheet" href="/build/css/app.css">
+    <link rel="stylesheet" href="https://cdn.essentiels.bnf.fr/build/css/shortcode.dcc3fc74.css"/>
+    <link rel="stylesheet" href="/build/css/article.css">
+</head>
+
+<body class="article article-type-third route-timeline-child ">
+<header>
+    <div class="header">
+        <div class="container">
+            <div class="row">  
+                <div class="col">
+                    <div id="quick-access">
+                        <a href="#first-menu-link" class="link-nav regular uppercase white">Accéder au menu</a>
+                        <a href="#search_term_header" class="link-nav regular uppercase white">Accéder à la recherche</a>
+                        <a href="#main-content" class="link-nav regular uppercase white">Accéder au contenu</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="main-nav">
+                        <div class="logo">
+                            <a href="/fr/"><img src="/build/img/logo/logo_bnf_passerelles.svg" alt="Lien vers la page d&#039;accueil de BnF Passerelles"></a>
+                        </div>
+                        <div class="flex-nav">
+                            <nav aria-label="Menu principal">
+                                <ul>
+                                    <li><a href="#" id="first-menu-link" class="active link-nav weightsemibold regular white uppercase" data-menu="constructions">Constructions</a></li>
+                                    <li><a href="#" class=" link-nav weightsemibold regular white uppercase" data-menu="metiers">Métiers</a></li>
+                                </ul>
+                            </nav>
+                            <div>
+                                <form name="search" method="get" action="/fr/recherche" class="search-form">
+                                <div><label class="search sr-only-mobile" for="search_term_header">        Recherche</label><input type="text" id="search_term_header" name="search[term]" placeholder="Une construction, un mot-clé…" /></div>
+                                <button type="submit" class="search-btn">Lancer la recherche</button>
+                                <input type="hidden" id="search__token" name="search[_token]" data-controller="csrf-protection" value="csrf-token" /></form>
+                                <a href="/fr/recherche" class="search-mobile">Recherche</a>
+                            </div>
+                            <a href="" class="link-nav weightregular regular white uppercase lang">EN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mega-menu constructions-menu" id="constructions">
+        <div class="container">
+            <div class="row">
+                <div class="col col-sm-12 col-lg-6">
+                    <h2 class="title-category black regular uppercase">Explorer&nbsp;<br/>les constructions</h2>
+                </div>
+                <nav aria-label="Sous-menu des constructions" class="col col-sm-12 col-lg-18">
+                    <ul>
+                        <li><a href="/fr/chronologie/"><span class="icon icon-timeline"></span><span class="btn-nv3 btn-link">La frise chronologique</span></a></li>
+                        <li><a href="/fr/carte"><span class="icon icon-map"></span><span class="btn-nv3 btn-link">La carte</span></a></li>
+                                                    <li><a href="/fr/constructions"><span class="icon icon-constructions"></span><span class="btn-nv3 btn-link">Les constructions de A à Z</span></a></li>                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+            <div class="mega-menu metiers-menu" id="metiers">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-sm-12 col-lg-6">
+                        <h2 class="title-category black regular uppercase">Explorer&nbsp;<br/>les métiers</h2>
+                    </div>
+                    <nav aria-label="Sous-menu des métiers" class="col col-sm-12 col-lg-18">
+                                                                                                    <ul>                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/35fb54a0-af3b-43c6-8682-ee21e779620d-carreleur" class="btn-nv3 btn-icon"><span class="icon icon-carreleur"></span>Carreleur</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/92dd4984-30e4-4ab6-924a-405ad333efcf-charpentier" class="btn-nv3 btn-icon"><span class="icon icon-charpentier"></span>Charpentier</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/d42c5443-3818-4ce8-a5a5-2ad0216bca93-couvreur" class="btn-nv3 btn-icon"><span class="icon icon-couvreur"></span>Couvreur</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/8d6b068d-5d3f-47bc-b023-19ab3ca7261f-electricien" class="btn-nv3 btn-icon"><span class="icon icon-electricien"></span>Électricien</a></li>
+                            </ul>                                                    <ul>                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/46e2651d-6bd4-4a37-91c1-b1d8251880a1-macon" class="btn-nv3 btn-icon"><span class="icon icon-macon"></span>Maçon</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/7dea3f1b-6d21-4b69-a3f0-20d3864b0b8c-menuisier" class="btn-nv3 btn-icon"><span class="icon icon-menuisier"></span>Menuisier</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/d0deea31-7782-4a6d-a70a-0aad11334061-metallier" class="btn-nv3 btn-icon"><span class="icon icon-metallier"></span>Métallier</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/e7cb1023-9c60-4651-9005-b7f4ac7ae929-peintre" class="btn-nv3 btn-icon"><span class="icon icon-peintre"></span>Peintre</a></li>
+                            </ul>                                                    <ul>                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/4d2329d2-1fb7-45a2-bd7e-93e0ecae845d-platrier" class="btn-nv3 btn-icon"><span class="icon icon-platrier"></span>Plâtrier</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/eed75946-b6db-4b5d-9350-375da7ae15c7-plombier-chauffagiste" class="btn-nv3 btn-icon"><span class="icon icon-plombier-chauffagiste"></span>Plombier-chauffagiste</a></li>
+                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/metier/d6cacd63-26d3-4837-ae4f-2da45a90ec2f-travaux-publics" class="btn-nv3 btn-icon"><span class="icon icon-travaux-publics"></span>Travaux publics</a></li>
+                            </ul>                                            </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="main-content" id="main-content">
+                <div class="article-container">
+            <section class="container">
+        <div class="row">
+            <ol class="col ariane" itemscope itemtype="https://schema.org/BreadcrumbList">
+                                                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                                    <a itemprop="item" href="/fr/" class="home" title="Accueil">
+                                <span class="icon icon-accueil-actif"></span><span itemprop="name" title="Accueil">Accueil</span>
+                            </a>
+                                                <meta itemprop="position" content="1"/>
+                    </li>
+                                                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                                    <a itemprop="item" href="https://passerelles.essentiels.bnf.fr/fr/chronologie/" title="Frise chronologique des constructions" class="link-nav small weightbold">
+                                <span itemprop="name" title="Frise chronologique des constructions">Frise chronologique des constructions</span>
+                            </a>
+                                                <meta itemprop="position" content="2"/>
+                    </li>
+                                                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                                    <a itemprop="item" href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis" title="La basilique de Saint-Denis" class="link-nav small weightbold">
+                                <span itemprop="name" title="La basilique de Saint-Denis">La basilique de Saint-Denis</span>
+                            </a>
+                                                <meta itemprop="position" content="3"/>
+                    </li>
+                                                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                                                    <a itemprop="item" href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france" title="Les Grandes Chroniques de France" class="link-nav small weightbold">
+                                <span itemprop="name" title="Les Grandes Chroniques de France">Les Grandes Chroniques de France</span>
+                            </a>
+                                                <meta itemprop="position" content="4"/>
+                    </li>
+                            </ol>
+        </div>
+    </section>
+        <div class="container">
+    <section class="row">
+        <div class="col col-sm-3 col-lg-6 ">
+                                                                                    
+                <aside class="submenu-content">
+        <h3 class="title replica black semi-small-v2 mobile">Dossiers</h3>
+        <ul class="submenu">
+            <li class="article-title"><h3 class="title replica black semi-small-v2">Dossiers</h3></li>
+            <li class="article-dropdown">
+                <button class="btn-dropdown"><span class="text"></span><span class="icon icon-chevron"></span></button>
+            </li>
+            <li class="dropdown">
+                <ul>
+                                                                                                                                <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/087a9b36-9885-48d9-8098-cef27fc41597-construction-la-basilique-saint-denis" class=" btn-nv2"><span class="btn-text">La construction de la basilique de Saint-Denis</span></a></li>
+                                                                                                                                                        <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/7d5589aa-13cf-40ae-b479-21b254e40655-crypte-saint-denis-la-necropole-royale" class=" btn-nv2"><span class="btn-text">De la crypte de Saint-Denis à la nécropole royale</span></a></li>
+                                                                                                                                                        <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/3038d0ed-badc-47e6-a520-5c8b6caeeca8-naissance-style-gothique-saint-denis" class=" btn-nv2"><span class="btn-text">La naissance du style gothique à Saint-Denis</span></a></li>
+                                                                                                                                                        <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france" class="active btn-nv2"><span class="btn-text">Les Grandes Chroniques de France</span></a></li>
+                                                                                                                                                        <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/fd14d0b9-0cd2-411a-a03b-ab52be87bdde-moments-histoire" class=" btn-nv2"><span class="btn-text">Moments d’histoire</span></a></li>
+                                                                                                                                                        <li><a href="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/502a4e01-5de0-4eff-bd1f-f08f359671c3-reconstruction-la-tour-et-la-fleche-la-basilique-cathedrale-saint-denis" class=" btn-nv2"><span class="btn-text">Reconstruction de la tour et de la flèche de la basilique cathédrale Saint-Denis</span></a></li>
+                                                            </ul>
+            </li>
+        </ul>
+    </aside>
+        </div>
+        <article class="col col-sm-9 col-lg-18  article-content">
+            <h1 class="title replica semi-semi-big  black first-title mb">Les Grandes Chroniques de France</h1>
+                                    <div class="body clearfix">
+                
+<div class="clearfix"></div>
+<div class="container-shortcode container-singleimg content-none singleimg-landscape" id="shortcode-cab63278-a028-4055-9546-64127bf69469">
+    <figure class="media-illu">
+        <picture class="media-illu-img">
+                                                
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/DZBplkAk/uploads/media/image/20201204203317000000_pas_2266.jpg 1000w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/KEE86yRZ/uploads/media/image/20201204203317000000_pas_2266.jpg 2000w" sizes="(min-width: 1440px) 1440px,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/DZBplkAk/uploads/media/image/20201204203317000000_pas_2266.jpg 1500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/KEE86yRZ/uploads/media/image/20201204203317000000_pas_2266.jpg 3000w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/DZBplkAk/uploads/media/image/20201204203317000000_pas_2266.jpg"
+                        alt="Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+            </picture>
+        <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-cab63278-a028-4055-9546-64127bf69469">
+            Agrandir
+            <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+        </button>
+            
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-cab63278-a028-4055-9546-64127bf69469">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/UtpF7CoB/uploads/media/image/20201204203317000000_pas_2266.jpg" data-alt="Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><em>Grandes Chroniques de France</em></h2>
+                                                                <div class="subtitle-2 marginb-s">Primat composant son ouvrage</div>
+                                                                <div class="media-description"><p>C’est vers 1250 que le roi Louis IX (connu aujourd’hui sous le nom de saint Louis) commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en "roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation.<br />
+Primat appelle son livre le <em>Roman des Rois</em>, car il s’agit pour lui de "fere cognoistre… la geste des rois". Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les regalia, les insignes de la royauté : la couronne, le sceptre, l’épée, la main de justice.<br />
+Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, <em>le Roman des Rois</em> fut terminé en 1274 et offert à Philippe III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute.<br />
+L’œuvre de Primat fut poursuivie tout d’abord par d’autres moines de l’abbaye de Saint-Denis, puis, à partir de Charles V, par les membres de sa chancellerie, y compris peut-être le chancelier Pierre d’Orgemont lui-même. Les manuscrits successifs de ce Roman des rois, appelé désormais <em>les Grandes Chroniques</em>, prolongeaient l’histoire de France jusqu’à l’époque contemporaine du copiste. C’est ainsi que, vers 1318, les libraires parisiens conçurent une édition qui incorporait l’histoire de saint Louis, rédigée par Guillaume de Nangis et s’achevait en 1270. Vers 1350, en même temps qu’une révision globale, l’histoire fut continuée jusqu’au règne de Philippe VI.</p></div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="cab63278-a028-4055-9546-64127bf69469" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/cab63278-a028-4055-9546-64127bf69469-grandes-chroniques-france-4" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs"><p>&copy; BnF</p></div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>        <figcaption class="media-legend margint-xs marginb-xxs">
+            <em>Grandes Chroniques de France</em> | <p>&copy; BnF</p>        </figcaption>
+    </figure>
+</div>
+    <div class="clearfix marginb-s marginb-mobile-s"></div>
+
+
+<p><strong>C’est vers 1250 que le roi Louis<span class="nbsp"> </span>IX (connu aujourd’hui sous le nom de saint<span class="nbsp"> </span>Louis) commande à un moine de Saint-Denis, Primat, un énorme travail<span class="nbsp"> </span>: réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en “roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation”.<br />
+Primat appelle son livre le<em> Roman des Rois</em>, car il s’agit pour lui de “fere cognoistre… la geste des rois”. Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les <em>regalia</em>, les insignes de la royauté<span class="nbsp"> </span>: la couronne, le sceptre, l’épée, la main de justice.<br />
+Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, le <em>Roman des Rois</em> fut terminé en 1274 et offert à Philippe<span class="nbsp"> </span>III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute. </strong></p>
+
+<h2>Des mises à jour périodiques</h2>
+
+
+<div class="clearfix"></div>
+<div class="container-shortcode container-singleimg content-right" id="shortcode-bf1cbac6-d471-4be9-ba5a-43d58fbc0ee9">
+    <figure class="media-illu">
+        <picture class="media-illu-img">
+                                                
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/aHivK0cl/uploads/media/image/20201204203331000000_pas_2268.jpg 500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/pumPh9Cf/uploads/media/image/20201204203331000000_pas_2268.jpg 1000w" sizes="(min-width: 1440px) 480px,
+(min-width: 1024px) 33vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/aHivK0cl/uploads/media/image/20201204203331000000_pas_2268.jpg 750w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/pumPh9Cf/uploads/media/image/20201204203331000000_pas_2268.jpg 1500w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/aHivK0cl/uploads/media/image/20201204203331000000_pas_2268.jpg"
+                        alt="Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+            </picture>
+        <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-bf1cbac6-d471-4be9-ba5a-43d58fbc0ee9">
+            Agrandir
+            <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+        </button>
+            
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-bf1cbac6-d471-4be9-ba5a-43d58fbc0ee9">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/7sUVpV4X/uploads/media/image/20201204203331000000_pas_2268.jpg" data-alt="Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><em>Grandes Chroniques de France</em></h2>
+                                                                <div class="subtitle-2 marginb-s">Louis IX et les pauvres</div>
+                                                                <div class="media-description"><p>C’est vers 1250 que le roi Louis IX (connu aujourd’hui sous le nom de saint Louis) commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en "roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation.<br />
+Primat appelle son livre le <em>Roman des Rois</em>, car il s’agit pour lui de "fere cognoistre… la geste des rois". Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les regalia, les insignes de la royauté : la couronne, le sceptre, l’épée, la main de justice.<br />
+Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, <em>le Roman des Rois</em> fut terminé en 1274 et offert à Philippe III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute.<br />
+L’œuvre de Primat fut poursuivie tout d’abord par d’autres moines de l’abbaye de Saint-Denis, puis, à partir de Charles V, par les membres de sa chancellerie, y compris peut-être le chancelier Pierre d’Orgemont lui-même. Les manuscrits successifs de ce Roman des rois, appelé désormais <em>les Grandes Chroniques</em>, prolongeaient l’histoire de France jusqu’à l’époque contemporaine du copiste. C’est ainsi que, vers 1318, les libraires parisiens conçurent une édition qui incorporait l’histoire de saint Louis, rédigée par Guillaume de Nangis et s’achevait en 1270. Vers 1350, en même temps qu’une révision globale, l’histoire fut continuée jusqu’au règne de Philippe VI.</p></div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="bf1cbac6-d471-4be9-ba5a-43d58fbc0ee9" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/bf1cbac6-d471-4be9-ba5a-43d58fbc0ee9-grandes-chroniques-france-5" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs"><p>&copy; BnF</p></div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>        <figcaption class="media-legend margint-xs marginb-xxs">
+            <em>Grandes Chroniques de France</em> | <p>&copy; BnF</p>        </figcaption>
+    </figure>
+</div>
+
+
+<p>L’œuvre de Primat fut <strong>poursuivie tout d’abord par d’autres moines</strong> de l’abbaye de Saint-Denis, puis, à partir de Charles<span class="nbsp"> </span>V, par les membres de sa chancellerie, y compris peut-être le chancelier Pierre d’Orgemont lui-même. Les manuscrits successifs de ce <strong><em>Roman des Rois</em>, appelé désormais les <em>Grandes Chroniques</em></strong>, prolongeaient l’histoire de France jusqu’à l’époque contemporaine du copiste. C’est ainsi que, vers 1318, les libraires parisiens conçurent une édition qui incorporait l’histoire de saint<span class="nbsp"> </span>Louis, rédigée par Guillaume de Nangis et s’achevait en 1270. Vers 1350, en même temps qu’une révision globale, l’histoire fut continuée jusqu’au règne de Philippe<span class="nbsp"> </span>VI.<br />
+Au milieu du 15<sup>e</sup><span class="nbsp"> </span>siècle, on y ajouta très logiquement les règnes de Charles<span class="nbsp"> </span>VI, d’après Jouvenel et le héraut Berry et celui de Charles<span class="nbsp"> </span>VII par Jean Chartier. Ainsi, le public de chaque génération pouvait trouver dans les <em>Grandes Chronique</em>s toute l’histoire de France jusqu’à son temps, rédigée en langue vernaculaire. Mais il s’agit d’une <strong>histoire officielle qui donne du passé national une vision partisane</strong>. Elle insiste sur les qualités des rois, raconte longuement les victoires, oublie les défaites et les luttes intestines, non sans contribuer cependant à la naissance du <strong>sentiment national</strong>.</p>
+
+<p><div class="container-shortcode container-facetofaceimg">
+    <div class="rowcontainer">
+                                                                                                                                                                                <div class="ratio-50">
+                <figure class="media-illu">
+                    <picture class="media-illu-img">
+                        <div class="btn-container">
+                            <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-ebd7c2ad-fabc-44e3-ac52-ed8421df904a-14867">
+                                Agrandir
+                                <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+                            </button>
+                        </div>
+                                                            
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/2vb22Noy/uploads/media/image/20201204154624000000_pas_2267.jpg 500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/qyOSrbok/uploads/media/image/20201204154624000000_pas_2267.jpg 1000w" sizes="(min-width: 1440px) 720px,
+(min-width: 1024px) 50vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/2vb22Noy/uploads/media/image/20201204154624000000_pas_2267.jpg 750w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/qyOSrbok/uploads/media/image/20201204154624000000_pas_2267.jpg 1500w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/2vb22Noy/uploads/media/image/20201204154624000000_pas_2267.jpg"
+                        alt="Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+                            <div class="ct-loader-custom">
+                            <div class="loader-custom">
+                                <div class="loader-animate">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </picture>
+                        
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-ebd7c2ad-fabc-44e3-ac52-ed8421df904a-14867">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/wa9uURe1/uploads/media/image/20201204154624000000_pas_2267.jpg" data-alt="Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><i>Grandes Chroniques de France</i></h2>
+                                                                <div class="subtitle-2 marginb-s">Primat présente son ouvrage au roi Philippe III le Hardi</div>
+                                                                <div class="media-description">C’est vers 1 250 que le roi Louis IX (connu aujourd’hui sous le nom de saint Louis) commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en "roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation.<br />
+Primat appelle son livre le <i>Roman des Rois</i>, car il s’agit pour lui de "fere cognoistre… la geste des rois". Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les regalia, les insignes de la royauté : la couronne, le sceptre, l’épée, la main de justice.
+<br />Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, <i>le Roman des Rois</i> fut terminé en 1 274 et offert à Philippe III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute.<br />
+L’œuvre de Primat fut poursuivie tout d’abord par d’autres moines de l’abbaye de Saint-Denis, puis, à partir de Charles V, par les membres de sa chancellerie, y compris peut-être le chancelier Pierre d’Orgemont lui-même. Les manuscrits successifs de ce Roman des rois, appelé désormais <i>les Grandes Chroniques</i>, prolongeaient l’histoire de France jusqu’à l’époque contemporaine du copiste. C’est ainsi que, vers 1 318, les libraires parisiens conçurent une édition qui incorporait l’histoire de saint Louis, rédigée par Guillaume de Nangis et s’achevait en 1 270. Vers 1 350, en même temps qu’une révision globale, l’histoire fut continuée jusqu’au règne de Philippe VI.</div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="ebd7c2ad-fabc-44e3-ac52-ed8421df904a" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/ebd7c2ad-fabc-44e3-ac52-ed8421df904a-grandes-chroniques-france-2" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs">© BnF</div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>                    <figcaption class="media-legend margint-xs marginb-xxs">
+                        <i>Grandes Chroniques de France</i> | © BnF                    </figcaption>
+                </figure>
+            </div>
+                                                                                                                                                                        <div class="ratio-50">
+                <figure class="media-illu">
+                    <picture class="media-illu-img">
+                        <div class="btn-container">
+                            <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-4af1b949-e606-4f1f-b873-5dc499ffe28c-14873">
+                                Agrandir
+                                <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+                            </button>
+                        </div>
+                                                            
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/m1Rs4zDB/uploads/media/image/20201204154707000000_pas_2269.jpg 500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/LxTy2lwn/uploads/media/image/20201204154707000000_pas_2269.jpg 1000w" sizes="(min-width: 1440px) 720px,
+(min-width: 1024px) 50vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/m1Rs4zDB/uploads/media/image/20201204154707000000_pas_2269.jpg 750w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/LxTy2lwn/uploads/media/image/20201204154707000000_pas_2269.jpg 1500w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/m1Rs4zDB/uploads/media/image/20201204154707000000_pas_2269.jpg"
+                        alt="Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+                            <div class="ct-loader-custom">
+                            <div class="loader-custom">
+                                <div class="loader-animate">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </picture>
+                        
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-4af1b949-e606-4f1f-b873-5dc499ffe28c-14873">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/iGaipsJb/uploads/media/image/20201204154707000000_pas_2269.jpg" data-alt="Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><i>Grandes Chroniques de France</i></h2>
+                                                                <div class="subtitle-2 marginb-s">Bataille de Cassel (1328)</div>
+                                                                <div class="media-description">C’est vers 1 250 que le roi Louis IX (connu aujourd’hui sous le nom de saint Louis) commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en "roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation.<br />
+Primat appelle son livre le <i>Roman des Rois</i>, car il s’agit pour lui de "fere cognoistre… la geste des rois". Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les regalia, les insignes de la royauté : la couronne, le sceptre, l’épée, la main de justice.
+<br />Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, <i>le Roman des Rois</i> fut terminé en 1 274 et offert à Philippe III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute.<br />
+L’œuvre de Primat fut poursuivie tout d’abord par d’autres moines de l’abbaye de Saint-Denis, puis, à partir de Charles V, par les membres de sa chancellerie, y compris peut-être le chancelier Pierre d’Orgemont lui-même. Les manuscrits successifs de ce Roman des rois, appelé désormais <i>les Grandes Chroniques</i>, prolongeaient l’histoire de France jusqu’à l’époque contemporaine du copiste. C’est ainsi que, vers 1 318, les libraires parisiens conçurent une édition qui incorporait l’histoire de saint Louis, rédigée par Guillaume de Nangis et s’achevait en 1 270. Vers 1 350, en même temps qu’une révision globale, l’histoire fut continuée jusqu’au règne de Philippe VI.</div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="4af1b949-e606-4f1f-b873-5dc499ffe28c" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/4af1b949-e606-4f1f-b873-5dc499ffe28c-grandes-chroniques-france-3" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs">© BnF</div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>                    <figcaption class="media-legend margint-xs marginb-xxs">
+                        <i>Grandes Chroniques de France</i> | © BnF                    </figcaption>
+                </figure>
+            </div>
+            </div>
+</div>
+<div class="clearfix marginb-s marginb-mobile-s"></div>
+ <div class="container-shortcode container-facetofaceimg">
+    <div class="rowcontainer">
+                                                                                                                                                                                <div class="ratio-50">
+                <figure class="media-illu">
+                    <picture class="media-illu-img">
+                        <div class="btn-container">
+                            <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-5caae83b-4e3b-406d-a476-04e3766f98e7-44062">
+                                Agrandir
+                                <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+                            </button>
+                        </div>
+                                                            
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/HgVKoEkT/uploads/media/image/20201204203353000000_pas_2270.jpg 500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/CKRv57Xs/uploads/media/image/20201204203353000000_pas_2270.jpg 1000w" sizes="(min-width: 1440px) 720px,
+(min-width: 1024px) 50vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/HgVKoEkT/uploads/media/image/20201204203353000000_pas_2270.jpg 750w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/CKRv57Xs/uploads/media/image/20201204203353000000_pas_2270.jpg 1500w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/HgVKoEkT/uploads/media/image/20201204203353000000_pas_2270.jpg"
+                        alt="Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+                            <div class="ct-loader-custom">
+                            <div class="loader-custom">
+                                <div class="loader-animate">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </picture>
+                        
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-5caae83b-4e3b-406d-a476-04e3766f98e7-44062">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/rW1qNE4D/uploads/media/image/20201204203353000000_pas_2270.jpg" data-alt="Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><em>Grandes Chroniques de France</em></h2>
+                                                                <div class="subtitle-2 marginb-s">Bataille de l’Écluse (1340)</div>
+                                                                <div class="media-description"><p>Le 24 juin 1340, Français et Anglais s’affrontent dans une des plus grandes batailles navales de la guerre de Cent Ans. Près de 450 navires se livrent combat en mer du Nord, devant l’Écluse, avant-port de la ville de Bruges. La flotte française est anéantie.</p></div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="5caae83b-4e3b-406d-a476-04e3766f98e7" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/5caae83b-4e3b-406d-a476-04e3766f98e7-grandes-chroniques-france-6" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs"><p>&copy; BnF</p></div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>                    <figcaption class="media-legend margint-xs marginb-xxs">
+                        <em>Grandes Chroniques de France</em> | <p>&copy; BnF</p>                    </figcaption>
+                </figure>
+            </div>
+                                                                                                                                                                        <div class="ratio-50">
+                <figure class="media-illu">
+                    <picture class="media-illu-img">
+                        <div class="btn-container">
+                            <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-53f3da9b-593f-47ec-abf2-bb59eedebcc2-43100">
+                                Agrandir
+                                <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+                            </button>
+                        </div>
+                                                            
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/5tLK28hD/uploads/media/image/20201204051148000000_pas_2271.jpg 500w" sizes="(min-width: 1440px) 720px,
+(min-width: 1024px) 50vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/5tLK28hD/uploads/media/image/20201204051148000000_pas_2271.jpg 750w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/5tLK28hD/uploads/media/image/20201204051148000000_pas_2271.jpg"
+                        alt="Exemplaire sur papier des Grandes Chroniques de France"
+                                loading="lazy"                        />
+    
+                            <div class="ct-loader-custom">
+                            <div class="loader-custom">
+                                <div class="loader-animate">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </picture>
+                        
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-53f3da9b-593f-47ec-abf2-bb59eedebcc2-43100">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/0RxP9KSt/uploads/media/image/20201204051148000000_pas_2271.jpg" data-alt="Exemplaire sur papier des Grandes Chroniques de France">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2">Exemplaire sur papier des <em>Grandes Chroniques de France</em></h2>
+                                                                                    <div class="media-description"><p>C’est vers 1250 que le roi Louis IX (connu aujourd’hui sous le nom de saint Louis) commande à un moine de Saint-Denis, Primat, un énorme travail : réaliser une chronique de la monarchie française, véritable compilation d’œuvres latines antérieures, rédigée en français, en "roman langue vulgaire parlée par les laïques, langue du plaisir et de la récréation. Primat appelle son livre <em>le Roman des Rois</em>, car il s’agit pour lui de "fere cognoistre… la geste des rois". Il rétablit les Capétiens dans la droite lignée de Charlemagne, suivant en cela les préoccupations du souverain qui, au même moment, procède à la réorganisation des tombes royales dans l’abbatiale. Car les liens sont étroits entre les rois de France et l’abbaye de Saint-Denis, où sont enterrés la plupart des souverains capétiens et conservés les regalia, les insignes de la royauté : la couronne, le sceptre, l’épée, la main de justice.<br />
+Œuvre décisive puisqu’elle bénéficiait de l’autorité royale qui l’avait commandée et approuvée, le Roman des Rois fut terminé en 1274 et offert à Philippe III le Hardi, la caution royale rendant l’œuvre de Primat authentique et lui conférant ainsi le caractère d’une vérité officielle que nul ne pouvait mettre en doute.<br />
+Au total près de 700 manuscrits des <em>Chroniques de France</em> sont aujourd’hui conservés. Le succès est considérable, surtout à partir du règne de Charles V. Les ateliers parisiens fournissent des dizaines de manuscrits des <em>Grandes Chroniques de France</em>. Volumineux et dotés de nombreuses miniatures, ces coûteux exemplaires sont surtout destinés aux princes et à leur entourage immédiat. Les nobles sont particulièrement sensibles à une histoire qui fixe la mémoire de leurs exploits ainsi que celle de leurs privilèges. Avec le retour de la paix vers 1450, on se remet à copier les <em>Grandes Chroniques</em> (30 manuscrits en vingt ans), puis à les imprimer fréquemment après 1477. Mais désormais la plupart des nouveaux manuscrits sont sur papier, en écriture cursive abrégée, avec peu de miniatures. Le succès des <em>Grandes Chroniques</em> s’éteint alors très vite, dès la fin du 15<sup>e</sup> siècle, peut-être parce que le public lettré est un peu las de cette histoire purement et simplement monarchique. Les "Intellectuels" du Moyen Âge ont besoin d’autres sources pour alimenter leur réflexion et c’est la raison pour laquelle on ne retrouve aucun exemplaire des <em>Grandes Chroniques</em> chez les docteurs de l’université parisienne.</p></div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="53f3da9b-593f-47ec-abf2-bb59eedebcc2" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/53f3da9b-593f-47ec-abf2-bb59eedebcc2-exemplaire-sur-papier-grandes-chroniques-france" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs"><p>&copy; BnF</p></div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>                    <figcaption class="media-legend margint-xs marginb-xxs">
+                        Exemplaire sur papier des <em>Grandes Chroniques de France</em> | <p>&copy; BnF</p>                    </figcaption>
+                </figure>
+            </div>
+            </div>
+</div>
+<div class="clearfix marginb-s marginb-mobile-s"></div>
+</p>
+
+<h2>Un succès considérable</h2>
+
+<p>Au total près de <strong>700<span class="nbsp"> </span>manuscrits</strong> des <em>Chroniques de France</em> sont aujourd’hui conservés. Le succès est considérable, surtout à partir du règne de Charles<span class="nbsp"> </span>V. Les ateliers parisiens fournissent des dizaines de manuscrits des <em>Grandes Chroniques de France</em>. Volumineux et dotés de nombreuses <strong>miniatures</strong>, ces coûteux exemplaires sont surtout <strong>destinés aux princes et à leur entourage immédiat</strong>. Les nobles sont particulièrement sensibles à une histoire qui fixe la mémoire de leurs exploits ainsi que celle de leurs privilèges. Avec le retour de la paix vers 1450, on se remet à copier les <em>Grandes Chroniques</em> (30<span class="nbsp"> </span>manuscrits en vingt ans), puis à les imprimer fréquemment après 1477.<br />
+Mais désormais la plupart des nouveaux manuscrits sont sur <strong>papier</strong>, en<strong> écriture cursive abrégée</strong>, avec peu de miniatures. Le succès des <em>Grandes Chroniques</em> s’éteint alors très vite, dès la fin du 15<sup>e</sup><span class="nbsp"> </span>siècle, peut-être parce que le public lettré est un peu las de cette histoire purement et simplement monarchique. Les “Intellectuels” du Moyen<span class="nbsp"> </span>Âge ont besoin d’autres sources pour alimenter leur réflexion et c’est la raison pour laquelle on ne retrouve aucun exemplaire des <em>Grandes Chroniques</em> chez les docteurs de l’université parisienne.</p>
+
+<h2>Le manuscrit illustré par Jean Fouquet</h2>
+
+
+<div class="clearfix"></div>
+<div class="container-shortcode container-singleimg content-right" id="shortcode-9ed91c96-c69e-4576-b8ea-08dc650062f8">
+    <figure class="media-illu">
+        <picture class="media-illu-img">
+                                                
+    
+        <source media="(min-width: 1024px)" srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/H8Ud7DPw/uploads/media/image/20201204154721000000_pas_2273.jpg 500w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/poHeyEOb/uploads/media/image/20201204154721000000_pas_2273.jpg 1000w" sizes="(min-width: 1440px) 480px,
+(min-width: 1024px) 33vw,
+100vw">
+                    <source srcset="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/H8Ud7DPw/uploads/media/image/20201204154721000000_pas_2273.jpg 750w, 
+https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/poHeyEOb/uploads/media/image/20201204154721000000_pas_2273.jpg 1500w" sizes="100vw">
+                <img             src="https://cdn.essentiels.bnf.fr/media/images/cache/crop/rc/H8Ud7DPw/uploads/media/image/20201204154721000000_pas_2273.jpg"
+                        alt="Grandes Chroniques de France, enluminées par Jean Fouquet"
+                                loading="lazy"                        />
+    
+            </picture>
+        <button type="button" class="media-explorer modal-opener cta-action" data-bnfmodal="modal-image-9ed91c96-c69e-4576-b8ea-08dc650062f8">
+            Agrandir
+            <span class="icon bnfoutil-icon icon-AGRANDIR"></span>
+        </button>
+            
+    
+<div class="modal-custom modal-zoom" data-bnfmodal="modal-image-9ed91c96-c69e-4576-b8ea-08dc650062f8">
+    <button type="button" class="cta cta-action modal-close">
+        Fermer
+        <span class="icon bnfoutil-icon icon-FERMER"></span>
+    </button>
+    <div class="modal-container with-infos">
+        <div class="modal-illu zoom-container marginb-s">
+                        <div class="zoom-illu" data-src="https://cdn.essentiels.bnf.fr/media/images/cache/cache/rc/2FJmb6tW/uploads/media/image/20201204154721000000_pas_2273.jpg" data-alt="Grandes Chroniques de France, enluminées par Jean Fouquet">
+            </div>
+            <div class="zoom-navigation">
+                <button type="button" class="cta cta-action zoom-btn zoom-in">
+                    <span class="icon bnfoutil-icon icon-PLUS" title="Aggrandir"></span>
+                </button>
+                <button type="button" class="cta cta-action zoom-btn zoom-out">
+                    <span class="icon bnfoutil-icon icon-MOIN" title="Réduire"></span>
+                </button>
+            </div>
+        </div>
+                    <div class="container">
+                <div class="media-details">
+                                            <h2 class="title-2 marginb-0"><i>Grandes Chroniques de France</i>, enluminées par Jean Fouquet</h2>
+                                                                <div class="subtitle-2 marginb-s">Entrée de l’empereur Charles IV à Cambrai</div>
+                                                                <div class="media-description">Le 22 décembre 1 378, l’empereur Charles IV et son fils Wenceslas, accompagnés par les messagers du roi venus les accueillir à quelques lieues de la ville, rencontrent l’évêque et les bourgeois de Cambrai.</div>
+                                                                <div class="margint-s">
+                                                                                                                    <a data-api-type="images" data-api-uuid="9ed91c96-c69e-4576-b8ea-08dc650062f8" data-api-principalsite="84498355-75bc-4bd1-b535-b53db21a3267" href="https://passerelles.essentiels.bnf.fr/fr/image/9ed91c96-c69e-4576-b8ea-08dc650062f8-grandes-chroniques-france-enluminees-par-jean-fouquet" class="cta cta-terciary with-icon right-icon">Accéder à la notice de l'image<span class="icon bnfoutil-icon icon-CHEVRON_DROITE"></span></a>
+                                                    </div>
+                    
+                                            <div class="media-bottom marginb-l">
+                            <div class="media-credits marginb-xs">© BnF</div>
+                        </div>
+                    
+                </div>
+            </div>
+            </div>
+</div>        <figcaption class="media-legend margint-xs marginb-xxs">
+            <i>Grandes Chroniques de France</i>, enluminées par Jean Fouquet | © BnF        </figcaption>
+    </figure>
+</div>
+
+
+<p>On ignore le destinataire de ce manuscrit, du fait de la disparition du premier feuillet<span class="nbsp"> </span>; l’hypothèse la plus probable est que Fouquet aurait réalisé son chef-d’œuvre <strong>pour le compte de Charles<span class="nbsp"> </span>VII </strong>vers 1455-1460, mais on ne peut exclure pour autant un autre commanditaire, familier du roi ou haut fonctionnaire de la Couronne.<br />
+La copie du <strong>manuscrit illustré</strong> par Fouquet a été réalisée en <strong>deux campagnes d’écriture</strong><span class="nbsp"> </span>: la première (jusqu’au feuillet 240) peut être datée des années 1420-1430 et la seconde, pratiquement contemporaine de l’illustration, aurait été réalisée vers 1455-1460. Chacune de ces campagnes se distingue par un style d’écriture, mais aussi par le format affecté aux miniatures<span class="nbsp"> </span>; à partir du folio 241, il y a sensiblement plus de place en hauteur, résultat semble-t-il d’une négociation de Fouquet avec le copiste. On assiste de ce fait à différentes mises en pages des cinquante et une miniatures placées en tête des principales divisions du texte en fonction des dynasties qui se sont succédées en France, depuis le mythique Pharamond jusqu’à Charles<span class="nbsp"> </span>VI. Dans la première partie, ne disposant que d’un espace restreint, Fouquet installe ses scènes dans le cadre d’un vaste paysage, aux perspectives aérées, les personnages étant réduits à de petites dimensions. En revanche, à partir de la vingt-sixième image, l’accent est mis sur les personnages, représentés en plan rapproché dans un espace limité.</p>
+            </div>
+                    </article>
+    </section>
+</div>        <section class="share">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p class="link-nav small black weightbold">Partager sur :</p>
+                <ul>
+                    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fpasserelles.essentiels.bnf.fr%2Ffr%2Fchronologie%2Fconstruction%2F55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis%2Farticle%2F05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france" target="_blank"><span class="icon icon-facebook"><span class="path1"></span><span class="path2"></span></span></span>Facebook</a></li>
+                    <li class="twitter"><a href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fpasserelles.essentiels.bnf.fr%2Ffr%2Fchronologie%2Fconstruction%2F55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis%2Farticle%2F05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france&text=Les Grandes Chroniques de France&via=laBnF" target="_blank"><span class="icon icon-twitter"><span class="path1"></span></span></span>Twitter</a></li>
+                    <li class="copy-link">
+                        <button class="js-copy-link" type="button" data-url="https://passerelles.essentiels.bnf.fr/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france" data-label-copied="Lien copié !" aria-label="Copier le lien">
+                            <span class="icon icon-copy"></span>
+                            <span class="copy-link__tooltip">Copier le lien</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="flex-group">
+                    <img src="/build/img/logo/logo-passerelles-black.svg" alt="" class="logo">
+                    <button class="scrollTop" title="Retourner en haut de la page"><span class="icon icon-fleche"></span></button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="flex-group baseline">
+                    <nav aria-label="Menu de pied-de-page">
+                                                    <ul class="footer-menu">
+                                                                    <li><a href="/fr/glossaire" class="link-nav regular weightbold black">Glossaire</a></li>
+                                                                                                    <li><a href="/fr/page/b1a36255-b693-4bea-8858-fdabb29897ff-conditions-generales-utilisation" class="link-nav regular weightbold black">Conditions g&eacute;n&eacute;rales d&#39;utilisation</a></li>
+                                                                    <li><a href="/fr/page/02ab4a74-b7e0-4214-be93-be8c349d7f55-credits" class="link-nav regular weightbold black">Cr&eacute;dits</a></li>
+                                                                    <li><a href="/fr/page/e66e8714-a060-4028-869f-51d79d8e7fe4-politique-de-confidentialité" class="link-nav regular weightbold black">Politique de confidentialit&eacute;</a></li>
+                                                                    <li><a href="/fr/page/3dcfdeec-23f9-412c-874d-8ed3970a2b07-mentions-legales" class="link-nav regular weightbold black">Mentions l&eacute;gales</a></li>
+                                                                <li>
+                                    <a href="#" class="handle-cookies link-nav regular weightbold black">Gérer les cookies</a>
+                                </li>
+                            </ul>
+                                            </nav>
+                    <ul class="partners">
+                        <li><a href="https://www.bnf.fr/" title="Site Institutionnel BNF"><img src="/build/img/logo/logo-bnf-black.svg" alt="Lien vers le site de la Bibliothèque nationale de France"/></a></li>
+                        <li><a href="http://www.fondationbtpplus.fr/" title="Fondation BTP plus" target="_blank" rel="noopener"><img src="/build/img/logo/logo-btp.svg" alt="Lien vers la Fondation BTP plus"/></a></li>
+                        <li><a href="https://www.ccca-btp.fr/" title="ccca btp" target="_blank" rel="noopener"><img src="/build/img/logo/logo-ccca-btp.svg" alt="Lien vers CCCA BTP"/></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><div class="tap-bar">
+    <nav aria-label="Menu principal mobile">
+        <ul>
+            <li><a href="/fr/" class="link-homepage "><span class="icon icon-accueil"></span><span>Accueil</span></a></li>
+            <li><a href="" class="link-constructions active" data-menu="constructions"><span class="icon icon-construction-mobile"></span><span>Constructions</span></a></li>
+            <li><a href="" class="link-metiers " data-menu="metiers"><span class="icon icon-metier"></span><span>Métiers</span></a></li>
+        </ul>
+    </nav>
+</div>        <script src="/build/js/runtime.js" defer></script><script src="/build/js/692.js" defer></script><script src="/build/js/448.js" defer></script><script src="/build/js/app.js" defer></script>
+    <script async defer type="text/javascript"
+        src="https://multimedia-ext.bnf.fr/bnf_marquage/bnf_marquage.js?version=1.0&domaine=passerelles.essentiels_p.bnf.fr"></script>
+
+<div class="marquage-page"
+     data-siten1="18798"
+     data-level2="23"
+     data-chapitre1="passerelles"
+     data-chapitre2="Article"
+     data-chapitre3="/fr/chronologie/construction/55e1a07f-e1e6-47e3-a690-ef8c003c9159-basilique-saint-denis/article/05a4f422-610a-40c4-b3a2-2b0b3de418f6-grandes-chroniques-france"
+     data-titre="Les Grandes Chroniques de France"
+>
+</div>
+
+    <script src="https://cdn.essentiels.bnf.fr/build/js/shortcode.b4403e17.js"></script>
+    <script src="/build/js/810.js" defer></script><script src="/build/js/637.js" defer></script><script src="/build/js/398.js" defer></script><script src="/build/js/829.js" defer></script><script src="/build/js/article.js" defer></script>
+</body>
+</html>
