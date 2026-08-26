@@ -13,8 +13,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* ... resto del tuo CSS ... */
-
 body { 
     font-family: 'Sorts Mill Goudy', Georgia, serif; 
     background-color: #f4f6f9; 
@@ -23,7 +21,7 @@ body {
     padding-top: 65px; 
 }
 
-/* --- NAVBAR FISSA CON MENU A TENDINA --- */
+/* --- Fixed navbar with drop-down menu --- */
 .navbar {
     position: fixed;
     top: 0;
@@ -124,11 +122,11 @@ body {
     display: block;
 }
 
-/* --- COPERTINA INTERO SCHERMO --- */
+/* --- Full-screen cover --- */
 .hero-cover {
     width: 100%;
     height: calc(100vh - 65px); 
-    background-image: linear-gradient(rgba(26, 54, 93, 0.65), rgba(153, 27, 27, 0.65)), url('https://cdn.britannica.com/34/152534-050-F10EF781/Leo-III-emperor-Charlemagne-December-25.jpg');
+    background-image: linear-gradient(rgba(26, 54, 93, 0.65), rgba(153, 27, 27, 0.65)), url('imagesCharlemagneCoronation/HeroImageCoronation.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: top center; 
@@ -166,7 +164,7 @@ body {
     color: #e2e8f0;
 }
 
-/* --- STRUTTURA DELLE SEZIONI --- */
+/* --- SECTION STRUCTURE --- */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -196,7 +194,7 @@ h2 {
     font-size: 1.6rem;
 }
 
-/* --- SEZIONE HOME --- */
+/* --- HOME SECTION --- */
 .home-grid {
     display: flex;
     gap: 40px;
@@ -226,7 +224,7 @@ h2 {
     display: block;
 }
 
-/* --- SEZIONE ITEMS (CARDS) --- */
+/* --- ITEMS SECTION (CARDS) --- */
 .grid-container { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -256,7 +254,6 @@ h2 {
     box-shadow: 0 12px 20px rgba(26,54,93,0.12);
 }
 
-/* MODIFICATO: Allargato lo spazio verticale per le foto a 240px */
 .card-image-box {
     width: 100%;
     height: 240px;
@@ -309,7 +306,6 @@ h2 {
 .badge-work { background-color: #991b1b; }    
 .badge-object { background-color: #0f766e; }  
 
-/* MODIFICATO: Aggiunta altezza massima e barra di scorrimento (scrollbar) */
 .description {
     margin-top: 5px;
     font-size: 0.95rem;
@@ -322,7 +318,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Stilizzazione barra di scorrimento per browser moderni */
 .description::-webkit-scrollbar {
     width: 5px;
 }
@@ -337,7 +332,7 @@ h2 {
     background: #94a3b8; 
 }
 
-/* NUOVO: Stile per il bottone See More */
+/* See More button style */
 .btn-see-more {
     margin-top: auto; 
     display: inline-block;
@@ -371,13 +366,13 @@ h2 {
 }
 
 .zoom-frame {
-    width: fit-content;        /* La cornice si stringe esattamente attorno alle proporzioni dell'SVG */
-    max-width: 90vw;           /* Impedisce alla cornice di uscire dai bordi dello schermo */
-    max-height: 80vh;          /* Impedisce alla cornice di essere troppo alta */
-    margin: 0 auto;            /* Centra la cornice orizzontalmente */
+    width: fit-content;        
+    max-width: 90vw;          
+    max-height: 80vh;          
+    margin: 0 auto;            
     border: 2px solid #ccc;
     border-radius: 8px;
-    overflow: hidden;          /* Mantiene lo zoom confinato all'interno */
+    overflow: hidden;          
     display: flex;
     justify-content: center;
     align-items: center;
@@ -392,17 +387,17 @@ h2 {
 
 .zoom-frame img {
     display: block;
-    max-width: 100%;           /* L'immagine non supera mai la cornice */
-    max-height: 80vh;          /* L'altezza massima viene rispettata */
-    height: auto;              /* Mantiene le proporzioni originali dell'SVG */
+    max-width: 100%;           
+    max-height: 80vh;          
+    height: auto;              
     transform-origin: center center;
     user-select: none;
     -webkit-user-drag: none;
 }
 
-/* --- MEDIA QUERIES PER RESPONSIVITÀ MOBILE E TABLET --- */
+/* --- MEDIA QUERIES FOR MOBILE AND TABLET ACCOUNTABILITY --- */
 
-/* Per schermi fino a 992px (Tablet e dispositivi medi) */
+/* For screens up to 992px (tablets and medium-sized devices) */
 @media (max-width: 992px) {
     .navbar {
         padding: 0 15px;
@@ -422,12 +417,12 @@ h2 {
     }
 
     .home-grid {
-        flex-direction: column; /* Incolonna testo e immagine */
+        flex-direction: column; 
         gap: 20px;
     }
 
     .home-text {
-        text-align: left; /* Migliore leggibilità su schermi stretti */
+        text-align: left; 
     }
 
     .home-img-wrapper img {
@@ -436,10 +431,10 @@ h2 {
     }
 }
 
-/* Per schermi fino a 768px (Smartphone) */
+/* For screens up to 768px (smartphones) */
 @media (max-width: 768px) {
     body {
-        padding-top: 110px; /* Aumenta il rientro per la navbar che va a capo */
+        padding-top: 110px; 
     }
 
     .navbar {
@@ -451,12 +446,12 @@ h2 {
     .navbar-menu {
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap; /* Permette ai menu di andare a capo su mobile */
+        flex-wrap: wrap; 
         margin-top: 5px;
     }
 
     .dropdown-menu {
-        top: 100%; /* Si posiziona sotto la voce di menu relativa */
+        top: 100%; 
         min-width: 180px;
     }
 
@@ -483,17 +478,93 @@ h2 {
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Una singola colonna per le card su smartphone */
+        grid-template-columns: 1fr; 
     }
 
     .zoom-frame {
-        max-width: 100%; /* La cornice dell'SVG usa tutto lo spazio disponibile */
+        max-width: 100%; 
         max-height: 60vh;
     }
 }
 
 @media (max-width: 768px) {
     .zoom-frame {
-        max-width: 100%; /* Su smartphone sfrutta tutta la larghezza disponibile */
+        max-width: 100%; 
     }
+}
+
+/* --- FOOTER --- */
+footer {
+    background-color: #1a365d;
+    color: #cbd5e1;
+    border-top: 3px solid #d4af37;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer-container.text-center {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+footer strong {
+    color: #ffffff;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.5px;
+}
+
+.zoom-frame {
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    user-select: none;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+}
+
+.zoom-frame:active {
+    cursor: grabbing;
+}
+
+.zoom-frame img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.1s ease-out;
+}
+
+.zoom-controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+    display: flex;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.zoom-btn {
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    padding: 4px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.zoom-btn:hover {
+    background: #f0f0f0;
 }

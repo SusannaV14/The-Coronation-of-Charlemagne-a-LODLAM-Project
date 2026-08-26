@@ -3,7 +3,7 @@ from lxml import etree
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import DC, FOAF, RDF, RDFS, XSD
 
-# Definiamo i Namespace utilizzati nel TEI e per l'esportazione RDF
+# Let us define the namespaces used in TEI and for RDF export
 TEI_NS = "http://www.tei-c.org/ns/1.0"
 NS_MAP = {
     "tei": TEI_NS,
@@ -14,7 +14,7 @@ NS_MAP = {
     "rdfs" : "http://www.w3.org/2000/01/rdf-schema#",
 }
 
-# Namespace personalizzato per le entità del progetto
+# Custom namespace for project entities
 EX = Namespace("http://example.org/coronation/")
 CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 SCHEMA = Namespace("https://schema.org/")
@@ -26,11 +26,11 @@ def parse_ref_to_uri(ref_str, g):
         return None
     ref_str = ref_str.strip()
 
-    # Se fa riferimento a un ID interno TEI (es. #Charlemagne)
+    # If it refers to an internal TEI ID (e.g., #Charlemagne)
     if ref_str.startswith("#"):
         return EX[ref_str[1:]]
 
-    # Se è un prefisso noto (es. foaf:Person, crm:E53_Place, schema:Manuscript)
+    # If it is a known prefix (e.g., foaf:Person, crm:E53_Place, schema:Manuscript)
     if ":" in ref_str:
         prefix, value = ref_str.split(":", 1)
         if prefix == "foaf":
@@ -44,7 +44,7 @@ def parse_ref_to_uri(ref_str, g):
         elif prefix == "rdf":
             return RDF[value]
 
-    # Se è già un URL completo
+    # If it is already a full URL
     if ref_str.startswith("http://") or ref_str.startswith("https://"):
         return URIRef(ref_str)
 
@@ -54,7 +54,7 @@ def parse_ref_to_uri(ref_str, g):
 def tei_to_rdf_ttl(
     xml_path="tei_document.xml", output_ttl_path="coronation_graph.ttl"
 ):
-    # 1. Inizializza il Grafo RDF e registra i prefissi per un file TTL pulito
+    # 1. Initialize the RDF Graph and register prefixes for a clean TTL file
     g = Graph()
     g.bind("ex", EX)
     g.bind("crm", CRM)
@@ -64,27 +64,27 @@ def tei_to_rdf_ttl(
     g.bind("rdfs", RDFS)
     g.bind("rdf", RDF)
 
-    # 2. Parsing del file TEI XML con lxml
+    # 2. Parsing the TEI XML file with lxml
     tree = etree.parse(xml_path)
     root = tree.getroot()
 
     # ----------------------------------------------------
-    # A. ESTRAZIONE METADATI ENTITÀ
+    # A. ENTITY METADATA EXTRACTION
     # ----------------------------------------------------
 
-    # Helper function per convertire la stringa di data nel Literal corretto
+    # Helper function to convert the date string into the correct Literal.
     def make_date_literal(date_str):
         date_str = date_str.strip()
-        # Se ha due trattini ed è nel formato YYYY-MM-DD (anche con anni a 4 cifre tipo 0748-04-02)
+        # If it has two hyphens and is in the format YYYY-MM-DD (even with 4-digit years like 0748-04-02)
         if date_str.count("-") == 2:
             return Literal(date_str, datatype=XSD.date)
-        # Se è solo l'anno YYYY
+        # If it is just the year YYYY
         elif len(date_str) == 4 and date_str.isdigit():
             return Literal(date_str, datatype=XSD.gYear)
-        # Altrimenti semplice stringa
+        # Otherwise, a simple string
         return Literal(date_str)
 
-    # A1. Persone (listPerson)
+    # A1. People (listPerson)
     for person in root.xpath("//tei:listPerson/tei:person", namespaces=NS_MAP):
         person_id = person.get("{http://www.w3.org/XML/1998/namespace}id")
         if not person_id:
@@ -115,7 +115,7 @@ def tei_to_rdf_ttl(
         for idno in person.xpath("tei:idno", namespaces=NS_MAP):
             g.add((subj, RDFS.seeAlso, URIRef(idno.text.strip())))
 
-    # A2. Luoghi (listPlace)
+    # A2. Places (listPlace)
     for place in root.xpath("//tei:listPlace/tei:place", namespaces=NS_MAP):
         place_id = place.get("{http://www.w3.org/XML/1998/namespace}id")
         if not place_id:
@@ -138,7 +138,7 @@ def tei_to_rdf_ttl(
         for idno in place.xpath("tei:idno", namespaces=NS_MAP):
             g.add((subj, RDFS.seeAlso, URIRef(idno.text.strip())))
 
-    # A3. Opere Letterarie (listBibl)
+    # A3. Literary Works (listBibl)
     for bibl in root.xpath("//tei:listBibl/tei:bibl", namespaces=NS_MAP):
         bibl_id = bibl.get("{http://www.w3.org/XML/1998/namespace}id")
         if not bibl_id:
@@ -187,9 +187,9 @@ def tei_to_rdf_ttl(
         for idno in bibl.xpath("tei:idno", namespaces=NS_MAP):
             g.add((subj, RDFS.seeAlso, URIRef(idno.text.strip())))
 
-    # A4. Oggetti Artistici (list[@type='culturalObjects'])
+    # A4. Artistic Objects (list[@type='culturalObjects'])
     for item in root.xpath(
-        "//tei:list[@type='culturalObjects']/tei:item", namespaces=NS_MAP
+        "//tei:listArtObj/tei:item", namespaces=NS_MAP
     ):
         item_id = item.get("{http://www.w3.org/XML/1998/namespace}id")
         if not item_id:
@@ -223,7 +223,7 @@ def tei_to_rdf_ttl(
             g.add((subj, RDFS.seeAlso, URIRef(idno.text.strip())))
 
     # ----------------------------------------------------
-    # B. ESTRAZIONE RELAZIONI (listRelation)
+    # B. RELATIONSHIP EXTRACTION (listRelation)
     # ----------------------------------------------------
     for rel in root.xpath("//tei:listRelation/tei:relation", namespaces=NS_MAP):
         active_ref = rel.get("active")
@@ -238,7 +238,7 @@ def tei_to_rdf_ttl(
             if active_uri and passive_uri and pred_uri:
                 g.add((active_uri, pred_uri, passive_uri))
 
-    # 3. Serializzazione e Salvataggio in formato TTL (Turtle)
+    # 3. Serialization and Saving in TTL (Turtle) Format 
     g.serialize(destination=output_ttl_path, format="turtle")
     print(
         f" File RDF generato con successo in formato Turtle: '{output_ttl_path}'"

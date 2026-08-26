@@ -39,7 +39,7 @@
                   <foaf:title>Emperor of the Romans</foaf:title>
                </person>
                
-               <!-- Item 2: Pope Leon III -->
+               <!-- Item 2: Pope Leo III -->
                <person xml:id="PopeLeoIII" ana="foaf:Person">
                   <persName>Pope Leo III</persName>
                   <idno type="Wikidata">https://www.wikidata.org/wiki/Q132086</idno>
@@ -130,10 +130,10 @@
             </listBibl>
             
             <!-- 4. ARTISTIC OBJECTS -->
-            <list type="culturalObjects">
+            <listArtObj>
                <!-- Item 9: Equestrian Statue -->
                <item xml:id="EquestrianStatue" ana="crm:E22_Human-Made_Object">
-                  <name>Equestrian Statuette of Charlemagne</name>
+                  <name type="culturalObject">Equestrian Statuette of Charlemagne</name>
                   <idno type="Wikidata">https://www.wikidata.org/wiki/Q15934337</idno>
                   <note type="artistic_object_metadata">
                      <crm:E4_Period>Carolingian Period (IX Century)</crm:E4_Period>
@@ -145,7 +145,7 @@
                
                <!-- Item 10: Bust of Charlemagne -->
                <item xml:id="BustOfCharlemagne" ana="crm:E22_Human-Made_Object">
-                  <name>Bust of Charlemagne</name>
+                  <name type="culturalObject">Bust of Charlemagne</name>
                   <idno type="Wikidata">https://www.wikidata.org/wiki/Q15534639</idno>
                   <note type="artistic_object_metadata">
                      <crm:E4_Period>Gothic Period (1349)</crm:E4_Period>
@@ -157,7 +157,7 @@
                
                <!-- Item 11: Imperial Crown of the Holy Roman Empire -->
                <item xml:id="ImperialCrown" ana="crm:E22_Human-Made_Object">
-                  <name>Imperial Crown</name>
+                  <name type="culturalObject">Imperial Crown</name>
                   <idno type="Wikidata">https://www.wikidata.org/wiki/Q701633</idno>
                   <note type="artistic_object_metadata">
                      <crm:E4_Period>Late X Century (Ottonian Period)</crm:E4_Period>
@@ -166,7 +166,7 @@
                      <dc:subject>Divine Right / Christian Monarchy Symbolism</dc:subject>
                   </note>
                </item>
-            </list>
+            </listArtObj>
 
             <!-- Coronation Event -->
             <listRelation>

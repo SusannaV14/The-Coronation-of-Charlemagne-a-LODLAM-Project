@@ -320,7 +320,7 @@
                     <!-- ARTISTIC OBJECTS -->
                     <section>
                         <h3>Artistic Objects</h3>
-                        <xsl:for-each select="//tei:list[@type='culturalObjects']/tei:item">
+                        <xsl:for-each select="//tei:listArtObj/tei:item">
                             <div class="entity-card object" id="{@xml:id}">
                                 <h4><xsl:value-of select="tei:name"/></h4>
                                 <ul>
@@ -409,7 +409,7 @@
     </xsl:template>
 
     <!-- References at Artistic Objects -->
-    <xsl:template match="tei:name[@type='culturalObject'][@ref]">
+    <xsl:template match="tei:name[@ref]">
     <a class="entity-ref object" href="{@ref}">
         <xsl:apply-templates/>
     </a>

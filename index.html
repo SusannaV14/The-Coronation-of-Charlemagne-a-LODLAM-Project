@@ -31,7 +31,7 @@
         <a href="#xml-to-rdf-document">XML to RDF Document</a>
       </div>
       </div>
-      <div class="navbar-item-dropdown"><a href="#about-me" class="dropdown-trigger" style="text-decoration:none;">Tools and Bibliography</a></div>
+      <div class="navbar-item-dropdown"><a href="#about" class="dropdown-trigger" style="text-decoration:none;">Tools and Bibliography</a></div>
       </div>
     </nav>
     <div class="hero-cover">
@@ -43,8 +43,8 @@
         <h2>Introduction</h2>
         <div class="home-grid">
         <div class="home-text">
-          <p>This is the website for the final presentation of <i>Information Science and Cultural Heritage</i> exam within the master’s degree in Digital Humanities and Digital Knowledge at University of Bologna.</p>
-          <p>The project is about the <strong>Coronation of Charlemagne</strong> event, happened on the 25th of December in 800 AD. This event is widely described in the Wikipedia page of Charlemagne, in particular in the section Coronation. Starting from reading this page, I have identified 11 items of different nature (people, places, literary works, artistic objects) connected with this famous historical event. The final gaol was to create a graph of knowledge where this different entities are linked together, using the semantic web technologies. </p>
+          <p>This is the website for the final presentation of <i>Information Science and Cultural Heritage</i> exam within the master’s degree in <i>Digital Humanities and Digital Knowledge</i> at University of Bologna.</p>
+          <p>The project is about the <strong>Coronation of Charlemagne</strong> event, happened on the 25th of December in 800 AD. This event is widely described in the <a href="https://en.wikipedia.org/wiki/Charlemagne">Wikipedia page</a> of Charlemagne, in particular in the section <i>Coronation</i>. Starting from reading this page, I have identified 11 items of different nature (people, places, literary works, artistic objects) connected with this famous historical event. The final gaol was to create a graph of knowledge where these different entities are linked together, using the semantic web technologies.</p>
         </div>
         <div class="home-img-wrapper"><img src="imagesCharlemagneCoronation/potraitCoronation.jpg" alt="Coronation pf Charlemagne by Raffaello"></div>
         </div>
@@ -197,6 +197,14 @@
         <div class="home-text">
             <p>After identifying the 11 entities, I attempted to establish a theoretical model capable of representing the relationships between them, significant metadata for each entity, and connections to authoritative sources.</p>
         </div>
+        <div class="zoom-frame">
+            <div class="zoom-controls">
+        <button type="button" class="zoom-btn" data-target="canva-img" data-action="in">+</button>
+        <button type="button" class="zoom-btn" data-target="canva-img" data-action="out">-</button>
+        <button type="button" class="zoom-btn" data-target="canva-img" data-action="reset">Reset</button>
+    </div>
+        <img id="canva-img" src="imagesCharlemagneCoronation/the coronation of charlemagne (1).png" alt="Canva Theoretical Model">
+    </div>
 </section>
 <section id="conceptual-model">
     <h2>Conceptual Model</h2>
@@ -204,14 +212,19 @@
         <p>After devoloping the Theoretical Model, I developed a formal representation of it through a Conceptual Model which reuses existing ontologies to define the relations and the metadata of my items.</p>
         <p>The ontologies I reused are:</p>
         <ul>
-            <li>Schema.org</li>
-            <li>Friend of a Friend</li>
-            <li>Dublin Core</li>
-            <li>CIDOC-CRM</li>
-            <li>RDF schema</li>
+            <li><strong>Schema.org</strong>: a shared, standardized vocabulary created by major search engines (Google, Microsoft, Yahoo, and Yandex); </li>
+            <li><strong>Friend of a Friend</strong>: useful for describing persons, their activities and their relations to other people and objects;</li>
+            <li><strong>Dublin Core</strong>: a widely used metadata standard of 15 elements designed to describe digital and physical resources like web pages, documents, images, and library items;</li>
+            <li><strong>CIDOC CRM</strong>: a formal ontology designed to integrate, mediate, and exchange cultural heritage and museum information;</li>
+            <li><strong>RDF schema</strong> a semantic extension of the Resource Description Framework (RDF). It is a standard vocabulary used to create basic data structures, classes, and properties for knowledge graphs and the Semantic Web;</li>
         </ul>
     </div>
     <div class="zoom-frame">
+        <div class="zoom-controls">
+        <button type="button" class="zoom-btn" data-target="diagram-img" data-action="in">+</button>
+        <button type="button" class="zoom-btn" data-target="diagram-img" data-action="out">-</button>
+        <button type="button" class="zoom-btn" data-target="diagram-img" data-action="reset">Reset</button>
+    </div>
         <img id="diagram-img" src="ConceptualModel_CharlemagneCoronation.svg" alt="Diagram yEd">
     </div>
 </section>
@@ -224,7 +237,7 @@
         <p>Finally, I marked up the Wikipedia page text itself, tagging the entities within it using their specific tags.</p>
         <p>Click below to download the complete XML/TEI transcription document.</p>
         
-        <!-- Bottone di Download -->
+        <!-- Download Button -->
         <a href="tei_document.xml" download="Charlemagne_Coronation_TEI.xml" class="btn-see-more" style="display: inline-block; margin-top: 15px;">
             See XML/TEI
         </a>
@@ -238,18 +251,18 @@
         <p>By clicking the buttons below, you can view the XSLT file, the Python script, and the final HTML.</p>
         
         <div class="button-group" style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px;">
-            <!-- 1. Download del file XSLT -->
+            <!-- 1. Download XSLT file -->
             <a href="transform.xslt" download="transform.xslt" class="btn-see-more">
                 See XSLT
             </a>
 
-            <!-- 2. Visualizzazione script Python -->
-            <a href="transform.py" target="_blank" class="btn-see-more">
+            <!-- 2. See Python script -->
+            <a href="transform.py" target="_blank" class="btn-see-more"> 
                 See transform.py
             </a>
 
-            <!-- 3. Visualizzazione file HTML ottenuto -->
-            <a href="index.html" target="_blank" class="btn-see-more">
+            <!-- 3. see HTML file -->
+            <a href="TheCoronation.html" target="_blank" class="btn-see-more">
                 See HTML
             </a>
         </div>
@@ -262,55 +275,162 @@
             <p>By clicking the buttons below, you can view the Python file and the Turtle file generated by running the script.</p>
         
         <div class="button-group" style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 15px; margin-bottom: 25px;">
-            <!-- 1. Script Python -->
+            <!-- 1. Python Script -->
             <a href="tei_to_rdf.py" target="_blank" class="btn-see-more">
                 See TEI to RDF
             </a>
 
-            <!-- 2. File Turtle (.ttl) -->
+            <!-- 2. Turtle File (.ttl) -->
             <a href="coronation_graph.ttl" target="_blank" class="btn-see-more">
                 See Final Turtle
             </a>
         </div>
 
-        <!-- Cornice adattabile con l'immagine del grafico RDF -->
+        <!-- Adaptable frame with the RDF graph image -->
          <div class="home-text">
             <p>Finally, using the free web service RDF Grapher, I transformed the Turtle file into a visual graph of nodes and edges, in order to visually see the relationships between the selected entities.</p>
          </div>
         <div class="zoom-frame">
+            <div class="zoom-controls">
+        <button type="button" class="zoom-btn" data-target="rdf-diagram-img" data-action="in">+</button>
+        <button type="button" class="zoom-btn" data-target="rdf-diagram-img" data-action="out">-</button>
+        <button type="button" class="zoom-btn" data-target="rdf-diagram-img" data-action="reset">Reset</button>
+    </div>
             <img id="rdf-diagram-img" src="imagesCharlemagneCoronation/rdf-grapher.png" alt="RDF Knowledge Graph Diagram">
         </div>
     </div>
 </section>
-<section id="about-me">
+<section id="about">
     <h2>Tools and Bibliography</h2>
-        <div class="placeholder-box">Susanna Valentini, Università di Bologna, 2026.</div>
+        <div class="home-text">
+        <p><strong>Tools and Languages:</strong></p>
+<ul>
+  <li><a href="https://tei-c.org/">XML/TEI</a></li>
+  <li><a href="https://www.w3.org/TR/xslt20/">XSLT</a></li>
+  <li><a href="https://docs.python.org/3.14/">Python 3.14</a></li>
+  <li><a href="https://www.w3.org/RDF/">RDF</a></li>
+  <li><a href="https://www.w3.org/html/">HTML</a></li>
+  <li><a href="https://www.w3.org/TR/css-2026/">CSS</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
+  <li><a href="https://essepuntato.it/graffoo/">Graphoo</a></li>
+  <li><a href="https://www.canva.com/">Canva</a></li>
+  <li><a href="https://www.ldf.fi/service/rdf-grapher">RDF Grapher</a></li>
+  <li><a href="https://schema.org/">Schema.org</a></li>
+  <li><a href="https://xmlns.com/foaf/spec/">FOAF</a></li>
+  <li><a href="https://www.dublincore.org/">Dublin Core</a></li>
+  <li><a href="https://cidoc-crm.org/">CIDOC CRM</a></li>
+  <li><a href="https://www.w3.org/TR/rdf-schema/">RDF schema</a></li>
+
+</ul>
+<p><strong>Sources for the text:</strong></p>
+<ul>
+  <li><a href="https://en.wikipedia.org/wiki/Charlemagne">Charlemagne Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Pope_Leo_III">Pope Leo III Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Einhard">Einhard Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Henri_Pirenne">Henri Pirenne Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Old_St._Peter%27s_Basilica">Old St. Peter’s Basilica Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Vita_Karoli_Magni">Vita Karoli Magni Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Annales_laureshamenses">Annales Laureshamenses Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Grandes_Chroniques_de_France">Grandes Chroniques de France Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Equestrian_statuette_of_Charlemagne">Equestrian Statue of Charlemagne Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Bust_of_Charlemagne">Bust of Charlemagne Wikipedia page</a></li>
+  <li><a href="https://en.wikipedia.org/wiki/Imperial_Crown_of_the_Holy_Roman_Empire">Imperial Crown Wikipedia page</a></li>
+</ul>
+  </div>
 </section>
 </div>
-<!-- Libreria Panzoom già presente -->
-<script src="https://unpkg.com/@panzoom/panzoom@4.5.1/dist/panzoom.min.js"></script>
-<script>
-    // 1. Zoom per il diagramma yEd (Conceptual Model)
-    const yedElem = document.getElementById('diagram-img');
-    if (yedElem) {
-        const panzoomYed = Panzoom(yedElem, {
-            maxScale: 5,
-            minScale: 1,
-            contain: 'outside'
-        });
-        yedElem.parentElement.addEventListener('wheel', panzoomYed.zoomWithWheel);
-    }
 
-    // 2. Zoom per il grafico RDF (XML to RDF Document)
-    const rdfElem = document.getElementById('rdf-diagram-img');
-    if (rdfElem) {
-        const panzoomRdf = Panzoom(rdfElem, {
-            maxScale: 5,
-            minScale: 1,
-            contain: 'outside'
+<!-- FOOTER -->
+    <footer>
+        <div class="footer-container text-center">
+            <p><strong>The Coronation of Charlemagne</strong> - Information Science and Cultural Heritage Project</p>
+            <p>
+                &#169; 2026 All Rights Reserved. Master's Degree in Digital Humanities and Digital Knowledge.
+            </p>
+        </div>
+    </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const frames = document.querySelectorAll(".zoom-frame");
+
+    frames.forEach(frame => {
+        const img = frame.querySelector("img");
+        if (!img) return;
+
+        let scale = 1;
+        let pointX = 0;
+        let pointY = 0;
+        let startX = 0;
+        let startY = 0;
+        let isDragging = false;
+
+        function updateTransform() {
+            img.style.transform = `translate(${pointX}px, ${pointY}px) scale(${scale})`;
+        }
+
+        // Zoom with mouse wheel (only inside the frame)
+        frame.addEventListener("wheel", function (e) {
+            e.preventDefault();
+            const delta = e.deltaY < 0 ? 1.15 : 0.85;
+            const newScale = scale * delta;
+
+            if (newScale >= 1 && newScale <= 5) {
+                scale = newScale;
+                updateTransform();
+            } else if (newScale < 1) {
+                // Reset position if returning to the base size
+                scale = 1;
+                pointX = 0;
+                pointY = 0;
+                updateTransform();
+            }
+        }, { passive: false });
+
+        // Image dragging (Pan)
+        frame.addEventListener("mousedown", function (e) {
+            if (scale <= 1) return; // Drag only when zoomed in
+            e.preventDefault();
+            isDragging = true;
+            startX = e.clientX - pointX;
+            startY = e.clientY - pointY;
         });
-        rdfElem.parentElement.addEventListener('wheel', panzoomRdf.zoomWithWheel);
-    }
+
+        window.addEventListener("mousemove", function (e) {
+            if (!isDragging) return;
+            pointX = e.clientX - startX;
+            pointY = e.clientY - startY;
+            updateTransform();
+        });
+
+        window.addEventListener("mouseup", function () {
+            isDragging = false;
+        });
+
+        // Button controls (+, -, Reset)
+        const buttons = frame.querySelectorAll(".zoom-btn");
+        buttons.forEach(btn => {
+            btn.addEventListener("click", function () {
+                const action = this.getAttribute("data-action");
+
+                if (action === "in") {
+                    if (scale < 5) scale = parseFloat((scale * 1.25).toFixed(2));
+                } else if (action === "out") {
+                    if (scale > 1) scale = parseFloat((scale / 1.25).toFixed(2));
+                    if (scale <= 1) {
+                        scale = 1;
+                        pointX = 0;
+                        pointY = 0;
+                    }
+                } else if (action === "reset") {
+                    scale = 1;
+                    pointX = 0;
+                    pointY = 0;
+                }
+                updateTransform();
+            });
+        });
+    });
+});
 </script>
 </body>
-</html>
+</html>  
