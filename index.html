@@ -24,7 +24,7 @@
       </div>
       </div>
       <div class="navbar-item-dropdown">
-        <div class="dropdown-trigger">Documentation ▾</div>
+        <div class="dropdown-trigger">Knowledge Representation ▾</div>
       <div class="dropdown-menu">
         <a href="#xml-tei-document">XML/TEI Document</a>
         <a href="#xml-to-html-document">XML to HTML Document</a>
@@ -44,7 +44,8 @@
         <div class="home-grid">
         <div class="home-text">
           <p>This is the website for the final presentation of <i>Information Science and Cultural Heritage</i> exam within the master’s degree in <i>Digital Humanities and Digital Knowledge</i> at University of Bologna.</p>
-          <p>The project is about the <strong>Coronation of Charlemagne</strong> event, happened on the 25th of December in 800 AD. This event is widely described in the <a href="https://en.wikipedia.org/wiki/Charlemagne">Wikipedia page</a> of Charlemagne, in particular in the section <i>Coronation</i>. Starting from reading this page, I have identified 11 items of different nature (people, places, literary works, artistic objects) connected with this famous historical event. The final gaol was to create a graph of knowledge where these different entities are linked together, using the semantic web technologies.</p>
+          <p>The project is about the <strong>Coronation of Charlemagne</strong> event, happened on the 25th of December in 800 AD. This event is widely described in the <a href="https://en.wikipedia.org/wiki/Charlemagne">Wikipedia page</a> of Charlemagne, in particular in the section <i>Coronation</i>. Starting from reading this page, I have identified 11 items of different nature (people, places, literary works, artistic objects) connected with this famous historical event. I selected the entities I believed are highly significant because they offer diverse perspectives on the event and allow us to explore historical debates surrounding it.</p>
+          <p>The final gaol was to create a graph of knowledge where these different entities are linked together, using the semantic web technologies.</p>
         </div>
         <div class="home-img-wrapper"><img src="imagesCharlemagneCoronation/potraitCoronation.jpg" alt="Coronation pf Charlemagne by Raffaello"></div>
         </div>
@@ -196,6 +197,17 @@
     <h2>Theoretical Model</h2>
         <div class="home-text">
             <p>After identifying the 11 entities, I attempted to establish a theoretical model capable of representing the relationships between them, significant metadata for each entity, and connections to authoritative sources.</p>
+            <p>Regarding the relationships between the entities and the central event, you can refer to the chart below.</p>
+            <p>
+                As for the metadata for each entity, I have decided to include the following for each category:
+                <ul>
+                    <li>People: name, date of birth, date of death, honorary title, profession;</li>
+                    <li>Places: name, country of location, artistic period of construction;</li>
+                    <li>Literary Works: title, author, publication date, subject matter, language, text type;</li>
+                    <li>Artistic Objects: name, artistic period of production, material, preservation location, subject matter;</li>
+                </ul>
+            </p>
+            <p>Finally, I selected VIAF and Wikidata as authoritative sources to link the items mentioned on the page.</p>
         </div>
         <div class="zoom-frame">
             <div class="zoom-controls">
@@ -203,7 +215,7 @@
         <button type="button" class="zoom-btn" data-target="canva-img" data-action="out">-</button>
         <button type="button" class="zoom-btn" data-target="canva-img" data-action="reset">Reset</button>
     </div>
-        <img id="canva-img" src="imagesCharlemagneCoronation/the coronation of charlemagne (1).png" alt="Canva Theoretical Model">
+        <img id="canva-img" src="imagesCharlemagneCoronation/THE CORONATION OF CHARLEMAGNE (2).png" alt="Canva Theoretical Model">
     </div>
 </section>
 <section id="conceptual-model">
@@ -231,13 +243,11 @@
 <section id="xml-tei-document">
     <h2>XML/TEI Document</h2>
     <div class="home-text">
-        <p>After establishing the conceptual model, I took the text from the Charlemagne Wikipedia page—specifically the sections on "coronation," "memory and historiography," and "appearance and iconography"—and marked it up in a XML/TEI document.</p>
-        <p>My mark up involves defining lists of the relevant entities (lists of people, places, literary works, and artistic objects), with specific characterizing metadata added to each item in the lists.</p>
-        <p>I then created a list of relationships, marking the connections between these entities.</p>
-        <p>Finally, I marked up the Wikipedia page text itself, tagging the entities within it using their specific tags.</p>
+        <p>After selecting the 11 entities, I copied the text from the <i>Coronation</i> section and a few paragraphs from the <i>Memory and Historiography</i> and <i>Appearance and Iconography</i> sections into an XML/TEI document. I began an initial phase of marking up the 11 entities within the document.</p>
+        <p>After establishing the conceptual model, I enriched my XML/TEI document with lists of these entities, categorized into people, places, literary works, and artistic objects; I added significant metadata for each object; finally, I created a list of relationships, linking the entities to one another and to the central event.</p>
         <p>Click below to download the complete XML/TEI transcription document.</p>
         
-        <!-- download button -->
+        <!-- Download Button -->
         <a href="tei_document.xml" download="Charlemagne_Coronation_TEI.xml" class="btn-see-more" style="display: inline-block; margin-top: 15px;">
             See XML/TEI
         </a>
@@ -288,7 +298,7 @@
 
         <!-- Adaptable frame with the RDF graph image -->
          <div class="home-text">
-            <p>Finally, using the free web service RDF Grapher, I transformed the Turtle file into a visual graph of nodes and edges, in order to visually see the relationships between the selected entities.</p>
+            <p>Using the free web service RDF Grapher, I transformed the Turtle file into a visual graph of nodes and edges, in order to visually see the relationships between the selected entities.</p>
          </div>
         <div class="zoom-frame">
             <div class="zoom-controls">
@@ -315,6 +325,8 @@
   <li><a href="https://essepuntato.it/graffoo/">Graphoo</a></li>
   <li><a href="https://www.canva.com/">Canva</a></li>
   <li><a href="https://www.ldf.fi/service/rdf-grapher">RDF Grapher</a></li>
+  <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
+  <li><a href="https://github.com/SusannaV14/The-Coronation-of-Charlemagne-a-LODLAM-Project">GitHub</a></li>
   <li><a href="https://schema.org/">Schema.org</a></li>
   <li><a href="https://xmlns.com/foaf/spec/">FOAF</a></li>
   <li><a href="https://www.dublincore.org/">Dublin Core</a></li>
