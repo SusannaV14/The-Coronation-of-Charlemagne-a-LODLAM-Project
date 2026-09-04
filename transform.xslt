@@ -235,7 +235,6 @@
                                     <xsl:if test="foaf:title"><li><strong>Title:</strong> <xsl:value-of select="foaf:title"/></li></xsl:if>
                                     <xsl:if test="schema:Occupation"><li><strong>Occupation:</strong> <xsl:value-of select="schema:Occupation"/></li></xsl:if>
                                     <xsl:if test="schema:birthDate"><li><strong>Birth-Death:</strong> <xsl:value-of select="schema:birthDate"/> / <xsl:value-of select="schema:deathDate"/></li></xsl:if>
-                                    <xsl:if test="dc:description"><li><strong>Description:</strong> <xsl:value-of select="dc:description"/></li></xsl:if>
                                     <xsl:if test="tei:idno[@type='Wikidata']">
                                         <li class="external-link"><strong>Wikidata:</strong> <a href="{tei:idno[@type='Wikidata']}" target="_blank"><xsl:value-of select="tei:idno[@type='Wikidata']"/></a></li>
                                     </xsl:if>
