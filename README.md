@@ -7,5 +7,5 @@ The documentation includes:
 4. A tei_to_rdf.py script to transform the XML/TEI in a turtle file;
 5. The final turtle document: coronation_graph.ttl;
 6. The conceptual model built with graphoo;
-7. A index.html file with the website used for the final presentation of the project;
+7. A index.html file and a style.css file for the website for the final presentation of the project;
 8. A folder with the images used in the website (included the mind map for the Theoretical Model);
