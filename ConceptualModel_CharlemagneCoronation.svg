@@ -133,8 +133,8 @@
       <path fill="none" d="M-299.1592 -69.2046 L159.0356 -69.2046 L258.2242 -69.2046 L309.726 -69.2046 L407.75 -69.2046 L407.75 -30.2589 L407.75 51.0016" clip-path="url(#clipPath2)"/>
       <path d="M-307.1592 -69.2046 C-307.1592 -71.4138 -305.3684 -73.2046 -303.1592 -73.2046 C-300.9501 -73.2046 -299.1592 -71.4138 -299.1592 -69.2046 C-299.1592 -66.9955 -300.9501 -65.2046 -303.1592 -65.2046 C-305.3684 -65.2046 -307.1592 -66.9955 -307.1592 -69.2046 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M407.75 62.0016 L413.75 50.0016 L401.75 50.0016 Z" clip-path="url(#clipPath2)" stroke="none"/>
-      <rect x="-100.6365" y="-81.0054" clip-path="url(#clipPath2)" fill="white" width="66.2422" height="23.6016" stroke="none"/>
-      <text x="-98.6365" font-size="16px" y="-62.9195" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">dc:crator</text>
+      <rect x="-105.0857" y="-81.0054" clip-path="url(#clipPath2)" fill="white" width="75.1406" height="23.6016" stroke="none"/>
+      <text x="-103.0857" font-size="16px" y="-62.9195" clip-path="url(#clipPath2)" font-family="sans-serif" stroke="none" xml:space="preserve">dc:creator</text>
       <path fill="none" d="M375.2213 110.019 L375.2213 496.9147" clip-path="url(#clipPath2)"/>
       <path d="M375.2213 102.019 C377.4304 102.019 379.2213 103.8099 379.2213 106.019 C379.2213 108.2282 377.4304 110.019 375.2213 110.019 C373.0121 110.019 371.2213 108.2282 371.2213 106.019 C371.2213 103.8099 373.0121 102.019 375.2213 102.019 Z" clip-path="url(#clipPath2)" stroke="none"/>
       <path d="M375.2213 507.9147 L381.2213 495.9147 L369.2213 495.9147 Z" clip-path="url(#clipPath2)" stroke="none"/>
